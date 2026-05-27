@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/batch-render-live-002-014.glb" id="1_character"]
+
+[node name="batch_render_live_002_014" instance=ExtResource("1_character")]
+metadata/id = "batch-render-live-002-014"
+metadata/display_name = "Batch-Render-Live-002 014 Male Necklace Quaternius Present Explain"
+metadata/persona = "host character who explains on command"
+metadata/tags = "generated,controllable,instant,base:male-hairsample,necklace-quaternius,neck-chest,license:cc0,attribution:not-required,creator:quaternius,presenter,explain,dialogue,face:talking-soft,lip-sync,vrm-visemes,source:render-live-002,quality:ship,calibration:image-guided-anchor,anchor:neck-chest-neck-loop,anchor-validation:ok,source:sparse-final80"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/a7dfe07ac8db2576.face.json"
+metadata/lipsync_cue_count = 35
+metadata/lipsync_duration = 6.240
+metadata/lipsync_visemes = "rest,ee,aa,oh,ou"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/batch-render-live-002-014_animation.json"

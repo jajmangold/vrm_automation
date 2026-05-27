@@ -1,0 +1,28 @@
+{
+  "models": [
+    {
+      "id": "vroid_hairsample_female_cc0",
+      "label": "VRoid HairSample Female",
+      "workflow_role": "downloaded-base-character",
+      "format": "vrm",
+      "url": "https://raw.githubusercontent.com/madjin/vrm-samples/master/vroid/beta/HairSample_Female.vrm",
+      "output_path": "input/base_models/vroid_hairsample_female_cc0.vrm",
+      "sha256": "adfd242317aaabc773f31f7fff7b013979fbb5baa47e97427a78913d9cb4e979",
+      "license": "CC0 per VRoid FAQ for old beta HairSample models; keep source terms with derived artifacts.",
+      "source_url": "https://github.com/madjin/vrm-samples",
+      "terms_url": "https://vroid.pixiv.help/hc/en-us/articles/4402614652569-Do-VRoid-Studio-s-sample-models-come-with-conditions-of-use"
+    },
+    {
+      "id": "vroid_hairsample_male_cc0",
+      "label": "VRoid HairSample Male",
+      "workflow_role": "downloaded-base-character",
+      "format": "vrm",
+      "url": "https://raw.githubusercontent.com/madjin/vrm-samples/master/vroid/beta/HairSample_Male.vrm",
+      "output_path": "input/base_models/vroid_hairsample_male_cc0.vrm",
+      "sha256": "7aeca142dabbc26ba0f5b9c998c8f3cb6df341287d67788427ac837223785a3f",
+      "license": "CC0 per VRoid FAQ for old beta HairSample models; keep source terms with derived artifacts.",
+      "source_url": "https://github.com/madjin/vrm-samples",
+      "terms_url": "https://vroid.pixiv.help/hc/en-us/articles/4402614652569-Do-VRoid-Studio-s-sample-models-come-with-conditions-of-use"
+    }
+  ]
+}

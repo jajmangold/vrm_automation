@@ -1,0 +1,48 @@
+{
+  "requests": [
+    {
+      "id": "control-fast-002-001",
+      "name": "Control Fast 002 001 Female Necklace Quaternius Talk Idle",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready character preview with cached lip sync and no Blender thumbnail render.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-fast-002-002",
+      "name": "Control Fast 002 002 Female Bowtie Jeremy Present Explain",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready character preview with cached lip sync and no Blender thumbnail render.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-fast-002-003",
+      "name": "Control Fast 002 003 Male Necklace Quaternius Talk Idle",
+      "base": "male",
+      "accessory": "necklace-quaternius",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready character preview with cached lip sync and no Blender thumbnail render.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-fast-002-004",
+      "name": "Control Fast 002 004 Male Bowtie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready character preview with cached lip sync and no Blender thumbnail render.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    }
+  ]
+}

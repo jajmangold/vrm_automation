@@ -1,0 +1,16 @@
+{
+  "clips": [
+    {
+      "id": "hello",
+      "path": "/workspace/input/audio/hello.wav",
+      "source": {
+        "service": "tts",
+        "host_hint": "josh@amd0",
+        "voice": "qwen3_tts_12hz_1b7_base",
+        "text": "Hello world, I can talk now."
+      },
+      "use_float16": true
+    }
+  ],
+  "schema": "vrm-person-factory.musetalk-audio-batch.v1"
+}

@@ -1,0 +1,47 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "portrait",
+    "render_height": "960",
+    "render_pose_frames": "3,9,16",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "creator": "jeremy",
+      "display_name": "Web-Pipeline-Render-002 002 Female Necktie Jeremy Talk Idle",
+      "facial_preset": "talking_soft",
+      "id": "web-pipeline-render-002-002",
+      "license": "Creative Commons Attribution 3.0",
+      "lipsync_timeline_json": "/workspace/outputs/lipsync/cache/9009d55aaeee4e89.face.json",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "notes": "Instant generated person: necktie-jeremy accessory with talk_idle motion.",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necktie_jeremy.glb",
+      "persona": "presenter character who talks on command",
+      "source_url": "https://poly.pizza/m/5HsEWuyPjik",
+      "tags": [
+        "generated",
+        "controllable",
+        "instant",
+        "base:female-hairsample",
+        "necktie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "quality:ship",
+        "creator:jeremy",
+        "talk-idle",
+        "dialogue",
+        "face:talking-soft",
+        "lip-sync",
+        "vrm-visemes"
+      ]
+    }
+  ]
+}

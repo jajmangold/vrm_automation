@@ -1,0 +1,33 @@
+FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+
+ARG MUSE_TALK_REPO=https://github.com/TMElyralab/MuseTalk.git
+ARG MUSE_TALK_REF=main
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PIP_NO_CACHE_DIR=1
+ENV MUSE_TALK_HOME=/opt/MuseTalk
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        ffmpeg \
+        git \
+        python3.10 \
+        python3.10-venv \
+        python3-pip \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN git clone --depth 1 --branch "${MUSE_TALK_REF}" "${MUSE_TALK_REPO}" "${MUSE_TALK_HOME}" \
+    && python3.10 -m pip install --upgrade pip setuptools wheel \
+    && python3.10 -m pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118 \
+    && python3.10 -m pip install -r "${MUSE_TALK_HOME}/requirements.txt" \
+    && python3.10 -m pip install --no-cache-dir -U openmim \
+    && mim install mmengine \
+    && mim install "mmcv==2.0.1" \
+    && mim install "mmdet==3.1.0" \
+    && python3.10 -m pip install "chumpy==0.70" --no-build-isolation \
+    && mim install "mmpose==1.1.0"
+
+WORKDIR ${MUSE_TALK_HOME}
+
+ENTRYPOINT ["python3.10", "-m", "scripts.inference"]

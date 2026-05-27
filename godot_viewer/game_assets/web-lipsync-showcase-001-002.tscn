@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/web-lipsync-showcase-001-002.glb" id="1_character"]
+
+[node name="web_lipsync_showcase_001_002" instance=ExtResource("1_character")]
+metadata/id = "web-lipsync-showcase-001-002"
+metadata/display_name = "Web-Lipsync-Showcase-001 002 Female Cowboy Hat Google Talk Idle"
+metadata/persona = "ranger character who talks on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,cowboy-hat-google,head-face,license:cc-by-3.0,attribution:required,creator:poly-by-google,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes,quality:ship,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,source:web-lipsync-showcase-001-002"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/web-lipsync-showcase-001-002_rhubarb.face.json"
+metadata/lipsync_cue_count = 21
+metadata/lipsync_duration = 2.560
+metadata/lipsync_visemes = "rest,aa,oh,ou,ee"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/web-lipsync-showcase-001-002_animation.json"

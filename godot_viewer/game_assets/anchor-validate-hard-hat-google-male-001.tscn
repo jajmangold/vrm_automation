@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/anchor-validate-hard-hat-google-male-001.glb" id="1_character"]
+
+[node name="anchor_validate_hard_hat_google_male_001" instance=ExtResource("1_character")]
+metadata/id = "anchor-validate-hard-hat-google-male-001"
+metadata/display_name = "Hard Hat Male Validation"
+metadata/persona = "male builder character for headwear validation"
+metadata/tags = "generated,anchor-validation,hard-hat-google,head-face,base:male-hairsample,quality:review,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,source:headwear-multibase-validation"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/anchor-validate-hard-hat-google-male-001_animation.json"

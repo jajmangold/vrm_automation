@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/auto-lip-002-007.glb" id="1_character"]
+
+[node name="auto_lip_002_007" instance=ExtResource("1_character")]
+metadata/id = "auto-lip-002-007"
+metadata/display_name = "Auto-Lip-002 007 Male Heart Glasses J Toastie Talk Idle"
+metadata/persona = "performer character who talks on command"
+metadata/tags = "generated,controllable,instant,base:male-hairsample,heart-glasses-j-toastie,head-face,license:cc-by-3.0,attribution:required,quality:ship,creator:j-toastie,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes,source:auto-lip-002-007"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/81ccbf69316af9b8.face.json"
+metadata/lipsync_cue_count = 40
+metadata/lipsync_duration = 5.680
+metadata/lipsync_visemes = "rest,ou,aa,ee,oh"
+metadata/animation_report = "/workspace/results/batch/auto-lip-002-007_animation.json"

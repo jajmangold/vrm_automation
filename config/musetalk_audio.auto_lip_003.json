@@ -1,0 +1,15 @@
+{
+  "clips": [
+    {
+      "id": "cache-9009",
+      "path": "/workspace/outputs/speech/cache/9009d55aaeee4e89_clean.wav",
+      "source": {
+        "audio_cache_key": "9009d55aaeee4e89",
+        "service": "tts",
+        "text": "Warm cache first, then render characters in moments."
+      },
+      "use_float16": true
+    }
+  ],
+  "schema": "vrm-person-factory.musetalk-audio-batch.v1"
+}

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/web-thumb-prod-256-fast-001-next-002-032.glb" id="1_character"]
+
+[node name="web_thumb_prod_256_fast_001_next_002_032" instance=ExtResource("1_character")]
+metadata/id = "web-thumb-prod-256-fast-001-next-002-032"
+metadata/display_name = "Web Thumb Prod 256 Fast 001 Next 002 032 Male Pirate Hat Google Listening Nod"
+metadata/persona = "captain character who listens on command"
+metadata/tags = "generated,controllable,instant,base:male-hairsample,pirate-hat-google,head-face,license:cc-by-3.0,attribution:required,quality:ship,creator:poly-by-google,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,listening,nod,dialogue,face:neutral,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/c30541e2dca4aec3.face.json"
+metadata/lipsync_cue_count = 33
+metadata/lipsync_duration = 2.487
+metadata/lipsync_visemes = "aa,rest,ih,ee,ou,oh"
+metadata/lipsync_source = "phoneme-events"
+metadata/lipsync_source_event_count = 33
+metadata/lipsync_source_phoneme_count = 33
+metadata/lipsync_source_phonemes = "AA1,L,IH0,V,SIL,K,AE1,N,F,IH1,S,R,EH1,SH,HH,Y,UW1,JH,G,IY1,D,AO1,Z"
+metadata/animation_report = "/workspace/results/batch/web-thumb-prod-256-fast-001-next-002-032_animation.json"

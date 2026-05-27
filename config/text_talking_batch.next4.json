@@ -1,0 +1,44 @@
+{
+  "defaults": {
+    "accessory": "glasses",
+    "animation": "talk_idle",
+    "batch_id": "text-next4",
+    "normalizer": "auto",
+    "render_profile": "fast_lipsync",
+    "tts_service": "voice_design",
+    "voice": "clear upbeat character voice"
+  },
+  "people": [
+    {
+      "base": "female",
+      "id": "text-next-001",
+      "name": "Text Next 001",
+      "seed": 301,
+      "text": "I am ready to preview dialogue, facial motion, and game export in one quick pass."
+    },
+    {
+      "accessory": "pixel glasses",
+      "base": "male",
+      "id": "text-next-002",
+      "name": "Text Next 002",
+      "seed": 302,
+      "text": "This batch path lets us create reviewable talking characters much faster."
+    },
+    {
+      "animation": "present_explain",
+      "base": "female",
+      "id": "text-next-003",
+      "name": "Text Next 003",
+      "seed": 303,
+      "text": "I can explain a scene, trigger an animation, and keep my mouth timed to audio."
+    },
+    {
+      "animation": "listening_nod",
+      "base": "male",
+      "id": "text-next-004",
+      "name": "Text Next 004",
+      "seed": 304,
+      "text": "I am listening, nodding, and staying ready for real time control in Godot."
+    }
+  ]
+}

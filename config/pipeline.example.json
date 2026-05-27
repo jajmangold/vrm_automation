@@ -1,0 +1,22 @@
+{
+  "project": "vrm-automation",
+  "source_model": "/workspace/input/model.vrm",
+  "target_vrm": "/workspace/outputs/model.vrm",
+  "animation_smoke_glb": "/workspace/outputs/animation_smoke.glb",
+  "animation_report": "/workspace/results/animation_smoke.json",
+  "preferred_blender": "4.2.0",
+  "primary_addons": [
+    "VRM Add-on for Blender",
+    "mmd_tools"
+  ],
+  "optional_addons": [
+    "Material Combiner"
+  ],
+  "human_gates": [
+    "asset_license_approval",
+    "character_identity_review",
+    "clothing_fit_and_clipping_review",
+    "spring_bone_motion_review",
+    "final_vrm_app_smoke"
+  ]
+}

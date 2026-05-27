@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/auto-lip-002-012.glb" id="1_character"]
+
+[node name="auto_lip_002_012" instance=ExtResource("1_character")]
+metadata/id = "auto-lip-002-012"
+metadata/display_name = "Auto-Lip-002 012 Female Heart Glasses J Toastie Present Explain"
+metadata/persona = "performer character who explains on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,heart-glasses-j-toastie,head-face,license:cc-by-3.0,attribution:required,quality:ship,creator:j-toastie,presenter,explain,dialogue,face:talking-soft,lip-sync,vrm-visemes,source:auto-lip-002-012"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/a7dfe07ac8db2576.face.json"
+metadata/lipsync_cue_count = 35
+metadata/lipsync_duration = 6.240
+metadata/lipsync_visemes = "rest,ee,aa,oh,ou"
+metadata/animation_report = "/workspace/results/batch/auto-lip-002-012_animation.json"

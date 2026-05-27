@@ -1,0 +1,55 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "portrait",
+    "render_height": "960",
+    "render_pose_frames": "3,9,16",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "creator": "Quaternius",
+      "display_name": "Cache Warm 007 f2e3a29a649ca00a",
+      "facial_preset": "talking_soft",
+      "id": "full-viseme-cache-bank-cache-warm-007-f2e3a29a",
+      "license": "CC0 1.0",
+      "lipsync_timeline_json": "/workspace/outputs/lipsync/cache/f2e3a29a649ca00a.face.json",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "notes": "Instant generated person: necklace-quaternius accessory with talk_idle motion.",
+      "outfit_fit_scope": "neck-chest",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necklace_quaternius.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.34,
+      "outfit_target_size_ratio": 0.1538,
+      "outfit_vertical_center_ratio": 0.84,
+      "persona": "host character who talks on command",
+      "source_url": "https://poly.pizza/m/Mezewzksj5",
+      "tags": [
+        "generated",
+        "controllable",
+        "instant",
+        "base:female-hairsample",
+        "necklace-quaternius",
+        "neck-chest",
+        "license:cc0",
+        "attribution:not-required",
+        "quality:ship",
+        "creator:quaternius",
+        "calibration:image-guided-anchor",
+        "anchor:neck-chest-neck-loop",
+        "anchor-validation:ok",
+        "talk-idle",
+        "dialogue",
+        "face:talking-soft",
+        "lip-sync",
+        "vrm-visemes"
+      ]
+    }
+  ]
+}

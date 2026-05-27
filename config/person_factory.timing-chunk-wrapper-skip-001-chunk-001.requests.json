@@ -1,0 +1,26 @@
+{
+  "requests": [
+    {
+      "id": "timing-chunk-wrapper-skip-001-chunk-001-001",
+      "name": "Timing Chunk Wrapper Skip 001 Chunk 001 001 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-chunk-wrapper-skip-001-chunk-001-002",
+      "name": "Timing Chunk Wrapper Skip 001 Chunk 001 002 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "requests": [
+    {
+      "id": "rough-timing-001-001",
+      "name": "Rough Timing 001 001 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "rough_lipsync",
+      "text": "Measure one rough preview character so fast creation is obvious.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    }
+  ]
+}

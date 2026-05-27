@@ -1,0 +1,268 @@
+{
+  "requests": [
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-169",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 169 Female Aviator Sunglasses Google Talk Idle",
+      "base": "female",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-170",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 170 Female Pirate Hat Google Present Explain",
+      "base": "female",
+      "accessory": "pirate-hat-google",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Maya kept red tools near Owen.",
+      "audio_cache_key": "b7d961df608ec3b3",
+      "lipsync_timeline": "outputs/lipsync/cache/b7d961df608ec3b3.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-171",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 171 Female Cowboy Hat Google Confident Point",
+      "base": "female",
+      "accessory": "cowboy-hat-google",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ivan made cool tea before Hugo spoke.",
+      "audio_cache_key": "6860420c4ef9c58c",
+      "lipsync_timeline": "outputs/lipsync/cache/6860420c4ef9c58c.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-172",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 172 Female Necklace Quaternius Listening Nod",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ava sees quick moves from Toby.",
+      "audio_cache_key": "4d423cd397ce03e5",
+      "lipsync_timeline": "outputs/lipsync/cache/4d423cd397ce03e5.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-173",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 173 Female Necktie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "necktie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Theo paid Lulu five coins today.",
+      "audio_cache_key": "1f79b4dc14f19a23",
+      "lipsync_timeline": "outputs/lipsync/cache/1f79b4dc14f19a23.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-174",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 174 Male Aviator Sunglasses Google Present Explain",
+      "base": "male",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Nina brought red peach pie to school.",
+      "audio_cache_key": "0a46dfa54e181139",
+      "lipsync_timeline": "outputs/lipsync/cache/0a46dfa54e181139.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-175",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 175 Male Pirate Hat Google Confident Point",
+      "base": "male",
+      "accessory": "pirate-hat-google",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Milo gave Eve two bright photos.",
+      "audio_cache_key": "9ae7671249da2a69",
+      "lipsync_timeline": "outputs/lipsync/cache/9ae7671249da2a69.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-176",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 176 Male Cowboy Hat Google Listening Nod",
+      "base": "male",
+      "accessory": "cowboy-hat-google",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Olive can fix fresh huge green doors.",
+      "audio_cache_key": "c30541e2dca4aec3",
+      "lipsync_timeline": "outputs/lipsync/cache/c30541e2dca4aec3.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-177",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 177 Male Necklace Quaternius Talk Idle",
+      "base": "male",
+      "accessory": "necklace-quaternius",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-178",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 178 Male Necktie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "necktie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Maya kept red tools near Owen.",
+      "audio_cache_key": "b7d961df608ec3b3",
+      "lipsync_timeline": "outputs/lipsync/cache/b7d961df608ec3b3.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-179",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 179 Female Aviator Sunglasses Google Confident Point",
+      "base": "female",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ivan made cool tea before Hugo spoke.",
+      "audio_cache_key": "6860420c4ef9c58c",
+      "lipsync_timeline": "outputs/lipsync/cache/6860420c4ef9c58c.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-180",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 180 Female Pirate Hat Google Listening Nod",
+      "base": "female",
+      "accessory": "pirate-hat-google",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ava sees quick moves from Toby.",
+      "audio_cache_key": "4d423cd397ce03e5",
+      "lipsync_timeline": "outputs/lipsync/cache/4d423cd397ce03e5.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-181",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 181 Female Cowboy Hat Google Talk Idle",
+      "base": "female",
+      "accessory": "cowboy-hat-google",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Theo paid Lulu five coins today.",
+      "audio_cache_key": "1f79b4dc14f19a23",
+      "lipsync_timeline": "outputs/lipsync/cache/1f79b4dc14f19a23.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-182",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 182 Female Necklace Quaternius Present Explain",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Nina brought red peach pie to school.",
+      "audio_cache_key": "0a46dfa54e181139",
+      "lipsync_timeline": "outputs/lipsync/cache/0a46dfa54e181139.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-183",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 183 Female Necktie Jeremy Confident Point",
+      "base": "female",
+      "accessory": "necktie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Milo gave Eve two bright photos.",
+      "audio_cache_key": "9ae7671249da2a69",
+      "lipsync_timeline": "outputs/lipsync/cache/9ae7671249da2a69.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-184",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 184 Male Aviator Sunglasses Google Listening Nod",
+      "base": "male",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Olive can fix fresh huge green doors.",
+      "audio_cache_key": "c30541e2dca4aec3",
+      "lipsync_timeline": "outputs/lipsync/cache/c30541e2dca4aec3.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-185",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 185 Male Pirate Hat Google Talk Idle",
+      "base": "male",
+      "accessory": "pirate-hat-google",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-186",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 186 Male Cowboy Hat Google Present Explain",
+      "base": "male",
+      "accessory": "cowboy-hat-google",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Maya kept red tools near Owen.",
+      "audio_cache_key": "b7d961df608ec3b3",
+      "lipsync_timeline": "outputs/lipsync/cache/b7d961df608ec3b3.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-187",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 187 Male Necklace Quaternius Confident Point",
+      "base": "male",
+      "accessory": "necklace-quaternius",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ivan made cool tea before Hugo spoke.",
+      "audio_cache_key": "6860420c4ef9c58c",
+      "lipsync_timeline": "outputs/lipsync/cache/6860420c4ef9c58c.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-188",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 188 Male Necktie Jeremy Listening Nod",
+      "base": "male",
+      "accessory": "necktie-jeremy",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Ava sees quick moves from Toby.",
+      "audio_cache_key": "4d423cd397ce03e5",
+      "lipsync_timeline": "outputs/lipsync/cache/4d423cd397ce03e5.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-189",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 189 Female Aviator Sunglasses Google Talk Idle",
+      "base": "female",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "talk_idle",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Theo paid Lulu five coins today.",
+      "audio_cache_key": "1f79b4dc14f19a23",
+      "lipsync_timeline": "outputs/lipsync/cache/1f79b4dc14f19a23.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-190",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 190 Female Pirate Hat Google Present Explain",
+      "base": "female",
+      "accessory": "pirate-hat-google",
+      "animation": "present_explain",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Nina brought red peach pie to school.",
+      "audio_cache_key": "0a46dfa54e181139",
+      "lipsync_timeline": "outputs/lipsync/cache/0a46dfa54e181139.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-191",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 191 Female Cowboy Hat Google Confident Point",
+      "base": "female",
+      "accessory": "cowboy-hat-google",
+      "animation": "confident_point",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Milo gave Eve two bright photos.",
+      "audio_cache_key": "9ae7671249da2a69",
+      "lipsync_timeline": "outputs/lipsync/cache/9ae7671249da2a69.face.json"
+    },
+    {
+      "id": "web-thumb-prod-256-ship-003-next-005-chunk-008-192",
+      "name": "Web Thumb Prod 256 Ship 003 Next 005 Chunk 008 192 Female Necklace Quaternius Listening Nod",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "listening_nod",
+      "render_profile": "thumbnail_lipsync",
+      "text": "Olive can fix fresh huge green doors.",
+      "audio_cache_key": "c30541e2dca4aec3",
+      "lipsync_timeline": "outputs/lipsync/cache/c30541e2dca4aec3.face.json"
+    }
+  ]
+}

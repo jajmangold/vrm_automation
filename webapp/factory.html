@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Person Factory</title>
+  <link rel="stylesheet" href="/webapp/factory.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="control-panel" aria-label="Create talking person">
+      <header>
+        <div>
+          <h1>Person Factory</h1>
+          <p>Generate talking VRM characters, monitor jobs, and review outputs from one local page.</p>
+        </div>
+        <div class="header-actions">
+          <button id="refresh-combined-gallery" type="button" class="secondary">Refresh catalog</button>
+          <button id="sync-godot" type="button" class="secondary">Sync Godot</button>
+          <a class="gallery-link" href="/index.html" target="gallery">Open gallery</a>
+        </div>
+      </header>
+
+      <div id="godot-stage-controls" class="godot-stage-panel" aria-label="Godot stage controls">
+        <div id="godot-stage-status" class="godot-stage-status" aria-live="polite">
+          <span>Godot</span>
+          <span>checking</span>
+        </div>
+        <div class="stage-row">
+          <span>Camera</span>
+          <button type="button" data-godot-stage-action="camera" data-preset="portrait">Portrait</button>
+          <button type="button" data-godot-stage-action="camera" data-preset="full">Full</button>
+          <button type="button" data-godot-stage-action="camera" data-preset="three-quarter">3/4</button>
+        </div>
+        <div class="stage-row">
+          <span>Face</span>
+          <button type="button" data-godot-stage-action="expression-preset" data-name="neutral" data-value="1">Neutral</button>
+          <button type="button" data-godot-stage-action="expression-preset" data-name="smile" data-value="0.9">Smile</button>
+          <button type="button" data-godot-stage-action="expression-preset" data-name="blink" data-value="1">Blink</button>
+          <button type="button" data-godot-stage-action="expression-preset" data-name="talk" data-value="0.8">Talk face</button>
+        </div>
+        <div class="stage-row">
+          <span>Viseme</span>
+          <button type="button" data-godot-stage-action="viseme" data-name="aa" data-value="0.9">AA</button>
+          <button type="button" data-godot-stage-action="viseme" data-name="ee" data-value="0.9">EE</button>
+          <button type="button" data-godot-stage-action="viseme" data-name="ih" data-value="0.9">IH</button>
+          <button type="button" data-godot-stage-action="viseme" data-name="oh" data-value="0.9">OH</button>
+          <button type="button" data-godot-stage-action="viseme" data-name="ou" data-value="0.9">OU</button>
+          <button type="button" data-godot-stage-action="viseme" data-name="rest" data-value="0">Rest</button>
+        </div>
+        <div id="godot-animation-controls" class="stage-row">
+          <span>Animation</span>
+          <button type="button" data-godot-stage-action="animation" data-name="talk_idle_Armature">Talk idle</button>
+        </div>
+      </div>
+
+      <form id="job-form" class="job-form">
+        <label>
+          <span>Character ID</span>
+          <input name="id" placeholder="web-host-001" pattern="[a-z0-9-]{2,64}">
+        </label>
+        <label>
+          <span>Name</span>
+          <input name="name" placeholder="Web Host 001">
+        </label>
+        <label class="wide">
+          <span>Line</span>
+          <textarea name="text" required maxlength="500" rows="3">Pat met Tim. Go put food.</textarea>
+        </label>
+        <label>
+          <span>Batch prefix</span>
+          <input name="id_prefix" placeholder="web-batch">
+        </label>
+        <label class="wide">
+          <span>Batch lines</span>
+          <textarea name="batch_lines" maxlength="3000" rows="5">Welcome to the fast character factory.
+I can generate and review a talking person from a sentence.
+This queue keeps heavy renders under control.</textarea>
+        </label>
+        <label>
+          <span>Base</span>
+          <select name="base">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+        </label>
+        <label>
+          <span>Accessory</span>
+          <select name="accessory">
+            <option value="necklace" selected>Necklace</option>
+            <option value="glasses">Glasses</option>
+            <option value="pixel glasses">Pixel glasses</option>
+            <option value="cowboy hat">Cowboy hat</option>
+            <option value="wizard hat">Wizard hat</option>
+            <option value="necktie">Necktie</option>
+            <option value="backpack">Backpack</option>
+            <option value="bag">Bag</option>
+          </select>
+        </label>
+        <label>
+          <span>Animation</span>
+          <select name="animation">
+            <option value="talk_idle">Talk idle</option>
+            <option value="present_explain">Present explain</option>
+            <option value="listening_nod">Listening nod</option>
+            <option value="celebrate">Celebrate</option>
+          </select>
+        </label>
+        <label>
+          <span>Render profile</span>
+          <select name="render_profile">
+            <option value="fast_lipsync">Fast lip-sync</option>
+            <option value="rough_lipsync">Rough lip-sync</option>
+            <option value="thumbnail_lipsync">Thumbnail lip-sync</option>
+            <option value="control_lipsync">Control lip-sync</option>
+            <option value="auto">Full auto</option>
+          </select>
+        </label>
+        <div class="wide matrix-panel" aria-label="Matrix batch controls">
+          <div class="matrix-heading">
+            <span>Matrix batch</span>
+            <output id="matrix-count">1 job</output>
+          </div>
+          <label>
+            <span>Bases</span>
+            <select name="matrix_bases" multiple size="2">
+              <option value="female" selected>Female</option>
+              <option value="male">Male</option>
+            </select>
+          </label>
+          <label>
+            <span>Accessories</span>
+            <select name="matrix_accessories" multiple size="5">
+              <option value="necklace" selected>Necklace</option>
+              <option value="cowboy hat">Cowboy hat</option>
+              <option value="wizard hat">Wizard hat</option>
+              <option value="necktie">Necktie</option>
+              <option value="bag">Bag</option>
+            </select>
+          </label>
+          <label>
+            <span>Animations</span>
+            <select name="matrix_animations" multiple size="5">
+              <option value="talk_idle" selected>Talk idle</option>
+              <option value="present_explain">Present explain</option>
+              <option value="listening_nod">Listening nod</option>
+              <option value="celebrate">Celebrate</option>
+            </select>
+          </label>
+          <label class="check">
+            <input name="matrix_chunked" type="checkbox">
+            <span>Chunk large matrix</span>
+          </label>
+          <div id="matrix-plan" class="matrix-plan" aria-live="polite">Matrix cache plan will appear here.</div>
+        </div>
+        <label class="check">
+          <input name="render" type="checkbox">
+          <span>Render GLB</span>
+        </label>
+        <label class="check">
+          <input name="dry_run" type="checkbox" checked>
+          <span>Dry run</span>
+        </label>
+        <label class="check">
+          <input name="reuse_audio" type="checkbox">
+          <span>Reuse audio</span>
+        </label>
+        <label class="check">
+          <input name="reuse_lipsync" type="checkbox">
+          <span>Reuse lip-sync</span>
+        </label>
+        <label class="check">
+          <input name="cache_line_audio" type="checkbox" checked>
+          <span>Cache line audio</span>
+        </label>
+        <button type="submit">Queue job</button>
+        <button id="queue-batch" type="button" class="secondary">Queue batch</button>
+        <button id="preview-matrix" type="button" class="secondary">Preview matrix</button>
+        <button id="warm-matrix-cache" type="button" class="secondary">Warm cache</button>
+        <button id="warm-render-matrix" type="button" class="secondary">Warm + render matrix</button>
+        <button id="queue-matrix" type="button" class="secondary">Queue matrix</button>
+      </form>
+      <p id="form-status" class="status-line" role="status"></p>
+
+      <section class="promote-panel" aria-label="Production lip-sync batch controls">
+        <div class="promote-heading">
+          <h2>Production lip-sync</h2>
+          <div class="button-row">
+            <button id="queue-phrasebank-thumbnails" type="button" class="secondary">Queue phrase-bank thumbnails</button>
+            <button id="queue-cached-lipsync" type="button" class="secondary">Queue promoted batch</button>
+          </div>
+        </div>
+        <div class="promote-controls">
+          <label class="wide">
+            <span>Cached line</span>
+            <select id="cached-lipsync-cache-select" multiple size="4"></select>
+          </label>
+          <label>
+            <span>Batch ID</span>
+            <input id="cached-lipsync-batch-id" value="web-control-001">
+          </label>
+          <label>
+            <span>Count</span>
+            <input id="cached-lipsync-count" type="number" min="1" max="96" value="4">
+          </label>
+          <label>
+            <span>Auto lines</span>
+            <input id="cached-lipsync-cache-line-count" type="number" min="1" max="16" value="4">
+          </label>
+          <label>
+            <span>Audio cache</span>
+            <input id="cached-lipsync-audio-key" value="683aff4ae080c56e">
+          </label>
+          <label>
+            <span>Timeline</span>
+            <input id="cached-lipsync-timeline" value="outputs/lipsync/cache/683aff4ae080c56e.face.json">
+          </label>
+          <label>
+            <span>Profile</span>
+            <select id="cached-lipsync-render-profile">
+              <option value="control_lipsync" selected>Control lip-sync</option>
+              <option value="rough_lipsync">Rough lip-sync</option>
+              <option value="thumbnail_lipsync">Thumbnail lip-sync</option>
+              <option value="fast_lipsync">Fast lip-sync</option>
+            </select>
+          </label>
+          <label class="check">
+            <input id="cached-lipsync-auto-cache-lines" type="checkbox" checked>
+            <span>Auto best cache lines</span>
+          </label>
+          <label class="check">
+            <input id="cached-lipsync-promote" type="checkbox" checked>
+            <span>Promote optimized GLBs</span>
+          </label>
+          <label class="check">
+            <input id="cached-lipsync-chunked" type="checkbox">
+            <span>Chunk large batches</span>
+          </label>
+          <label class="check">
+            <input id="cached-lipsync-fast-publish" type="checkbox" checked>
+            <span>Fast batch gallery</span>
+          </label>
+        </div>
+        <div id="cached-lipsync-estimate" class="plan-panel"></div>
+      </section>
+
+      <section class="promote-panel" aria-label="Batch promotion controls">
+        <div class="promote-heading">
+          <h2>Promote</h2>
+          <button id="promote-batch" type="button" class="secondary">Promote batch</button>
+        </div>
+        <div class="promote-controls">
+          <label>
+            <span>Batch JSON</span>
+            <input id="promote-batch-result" value="results/batch_person_factory_control_prod_001_latest.json">
+          </label>
+          <label>
+            <span>Texture</span>
+            <input id="promote-texture-size" type="number" min="128" max="4096" step="128" value="768">
+          </label>
+        </div>
+      </section>
+
+      <section class="placement-panel" aria-label="Placement controls">
+        <div class="placement-heading">
+          <h2>Placement</h2>
+          <button id="refresh-placement" type="button" class="secondary">Refresh</button>
+        </div>
+        <div id="placement-summary" class="placement-summary" aria-live="polite"></div>
+        <div class="placement-controls">
+          <label>
+            <span>Asset</span>
+            <select id="placement-asset"></select>
+          </label>
+          <label>
+            <span>Profile</span>
+            <select id="placement-profile">
+              <option value="rough">Rough</option>
+              <option value="promote">Promote</option>
+            </select>
+          </label>
+          <button id="placement-plan" type="button" class="secondary">Plan</button>
+        </div>
+        <div class="placement-boxes">
+          <label>
+            <span>Current box</span>
+            <input id="placement-current-box" value="120,260,220,310">
+          </label>
+          <label>
+            <span>Target box</span>
+            <input id="placement-target-box" value="130,240,210,280">
+          </label>
+          <label>
+            <span>Character box</span>
+            <input id="placement-character-box" value="0,0,400,800">
+          </label>
+          <button id="placement-suggest" type="button" class="secondary">Suggest</button>
+        </div>
+        <pre id="placement-output" class="placement-output" aria-live="polite"></pre>
+      </section>
+    </section>
+
+    <section class="jobs-panel" aria-label="Jobs">
+      <header>
+        <h2>Jobs</h2>
+        <button id="refresh-jobs" type="button">Refresh</button>
+      </header>
+      <div id="job-stats" class="job-stats" aria-live="polite"></div>
+      <div id="storage-stats" class="storage-stats" aria-live="polite"></div>
+      <section class="recent-galleries" aria-label="Recent galleries">
+        <div class="recent-galleries-head">
+          <h3>Recent galleries</h3>
+          <button id="refresh-galleries" type="button" class="secondary">Refresh</button>
+        </div>
+        <div id="recent-galleries" class="recent-gallery-links" aria-live="polite"></div>
+      </section>
+      <div id="job-filters" class="job-filters" aria-label="Job filters">
+        <button type="button" data-job-filter="all" data-label="All" class="active" aria-pressed="true">All 0</button>
+        <button type="button" data-job-filter="game-ready" data-label="Game-ready" aria-pressed="false">Game-ready 0</button>
+        <button type="button" data-job-filter="cache-only" data-label="Cache-only" aria-pressed="false">Cache-only 0</button>
+        <button type="button" data-job-filter="lip-ready" data-label="Lip-ready" aria-pressed="false">Lip-ready 0</button>
+        <button type="button" data-job-filter="needs-lip-fix" data-label="Needs lip fix" aria-pressed="false">Needs lip fix 0</button>
+        <button type="button" data-job-filter="pipelines" data-label="Pipelines" aria-pressed="false">Pipelines 0</button>
+        <button type="button" data-job-filter="errors" data-label="Errors" aria-pressed="false">Errors 0</button>
+      </div>
+      <div id="jobs" class="jobs"></div>
+    </section>
+
+    <section class="gallery-panel" aria-label="Generated character gallery">
+      <div id="character-browser" class="character-browser" aria-label="Character browser">
+        <div class="character-browser-head">
+          <div>
+            <h2>Characters</h2>
+            <p id="character-summary">Loading generated outputs...</p>
+          </div>
+          <div class="character-actions">
+            <input id="character-search" type="search" placeholder="Search characters, tags, animations">
+            <select id="character-priority">
+              <option value="">All QA</option>
+              <option value="ship">Ship</option>
+              <option value="review">Review</option>
+            </select>
+            <select id="character-lip">
+              <option value="">All lips</option>
+              <option value="ok">Lip OK</option>
+              <option value="review">Lip review</option>
+              <option value="unchecked">Unchecked</option>
+            </select>
+            <select id="character-sort">
+              <option value="ready">Ready first</option>
+              <option value="newest">Newest</option>
+              <option value="smallest">Smallest GLB</option>
+              <option value="largest">Largest GLB</option>
+              <option value="id">ID</option>
+            </select>
+            <button id="refresh-characters" type="button" class="secondary">Refresh</button>
+          </div>
+        </div>
+        <div id="character-tags" class="character-tags" aria-label="Character tag filters"></div>
+        <div id="character-results" class="character-results"></div>
+        <div class="character-pager">
+          <button id="character-prev" type="button" class="secondary">Previous</button>
+          <span id="character-page-status">Page 1</span>
+          <button id="character-next" type="button" class="secondary">Next</button>
+        </div>
+      </div>
+      <iframe name="gallery" title="Generated character gallery" src="/index.html"></iframe>
+    </section>
+  </main>
+  <script src="/webapp/factory.js"></script>
+</body>
+</html>

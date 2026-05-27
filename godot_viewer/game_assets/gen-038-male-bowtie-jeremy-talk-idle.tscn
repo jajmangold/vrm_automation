@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/gen-038-male-bowtie-jeremy-talk-idle.glb" id="1_character"]
+
+[node name="gen_038_male_bowtie_jeremy_talk_idle" instance=ExtResource("1_character")]
+metadata/id = "gen-038-male-bowtie-jeremy-talk-idle"
+metadata/display_name = "Sora Talks"
+metadata/persona = "host character who talks on command"
+metadata/tags = "generated,controllable,base:male-hairsample,bowtie-jeremy,neck-chest,license:cc-by-3.0,attribution:required,creator:jeremy,talk-idle,dialogue,quality:ship,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,source:bowtie-rerender"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/gen-038-male-bowtie-jeremy-talk-idle_animation.json"

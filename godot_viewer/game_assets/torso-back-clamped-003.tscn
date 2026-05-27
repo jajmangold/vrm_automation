@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/torso-back-clamped-003.glb" id="1_character"]
+
+[node name="torso_back_clamped_003" instance=ExtResource("1_character")]
+metadata/id = "torso-back-clamped-003"
+metadata/display_name = "Anchor Candidate Backpack Female"
+metadata/persona = "female accessory fit candidate for backpack-quaternius"
+metadata/tags = "generated,anchor-candidate,backpack-quaternius,torso-back,base:female-hairsample,source:anchor-fit-suggestion,review:torso-back,quality:ship,calibration:image-guided-anchor,anchor:torso-back-back-center,anchor-validation:ok,source:torso-back-clamped-probe"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/torso-back-clamped-003_animation.json"

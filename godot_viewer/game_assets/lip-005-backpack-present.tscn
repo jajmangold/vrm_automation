@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/lip-005-backpack-present.glb" id="1_character"]
+
+[node name="lip_005_backpack_present" instance=ExtResource("1_character")]
+metadata/id = "lip-005-backpack-present"
+metadata/display_name = "Lipsync Backpack Present"
+metadata/persona = "guide character explaining a scene"
+metadata/tags = "lip-sync,presenter,backpack,vrm-visemes,godot-ready,lipsync-override:audio-derived,lipsync-override-from:person-factory-hello,lipsync-override-to:person-factory-hello,source:in-blender,source:sparse-next24"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/person_factory_hello_rhubarb.face.json"
+metadata/lipsync_cue_count = 25
+metadata/lipsync_duration = 4.000
+metadata/lipsync_visemes = "rest,aa,oh,ou,ee"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/lip-005-backpack-present_animation.json"

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/web-thumb-prod-256-ship-003-next-004-chunk-011-242.glb" id="1_character"]
+
+[node name="web_thumb_prod_256_ship_003_next_004_chunk_011_242" instance=ExtResource("1_character")]
+metadata/id = "web-thumb-prod-256-ship-003-next-004-chunk-011-242"
+metadata/display_name = "Web Thumb Prod 256 Ship 003 Next 004 Chunk 011 242 Female Pirate Hat Google Present Explain"
+metadata/persona = "captain character who explains on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,pirate-hat-google,head-face,license:cc-by-3.0,attribution:required,quality:ship,creator:poly-by-google,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,presenter,explain,dialogue,face:talking-soft,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/b7d961df608ec3b3.face.json"
+metadata/lipsync_cue_count = 25
+metadata/lipsync_duration = 2.326
+metadata/lipsync_visemes = "rest,aa,ee,ou,ih,oh"
+metadata/lipsync_source = "phoneme-events"
+metadata/lipsync_source_event_count = 25
+metadata/lipsync_source_phoneme_count = 25
+metadata/lipsync_source_phonemes = "M,AY1,AH0,SIL,K,EH1,P,T,R,D,UW1,L,Z,N,IH1,OW1"
+metadata/animation_report = "/workspace/results/batch/web-thumb-prod-256-ship-003-next-004-chunk-011-242_animation.json"

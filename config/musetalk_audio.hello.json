@@ -1,0 +1,16 @@
+{
+  "schema": "vrm-person-factory.musetalk-audio-batch.v1",
+  "clips": [
+    {
+      "id": "person_factory_hello",
+      "path": "/workspace/outputs/speech/person_factory_hello.wav",
+      "source": {
+        "service": "tts.voice_design",
+        "voice": "warm clear character voice",
+        "text": "Hello. I am a generated character ready for a quick talking video test.",
+        "seed": 42
+      },
+      "use_float16": true
+    }
+  ]
+}

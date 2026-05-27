@@ -1,0 +1,116 @@
+{
+  "defaults": {
+    "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+    "render_angles": "front,portrait",
+    "render_pose_frames": "24,72",
+    "render_pose_stills": "1",
+    "render_width": "640",
+    "render_height": "960",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "cache_base_scenes": "1"
+  },
+  "jobs": [
+    {
+      "id": "gen-018-female-bowtie-jeremy-cheerful-wave",
+      "display_name": "Sol Greets",
+      "persona": "host character who greets on command",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bowtie_jeremy.glb",
+      "category": "neck_chest",
+      "animation_preset": "cheerful_wave",
+      "license": "Creative Commons Attribution 3.0",
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "creator": "jeremy",
+      "tags": [
+        "generated",
+        "controllable",
+        "base:female-hairsample",
+        "bowtie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "creator:jeremy",
+        "cheerful",
+        "wave"
+      ],
+      "notes": "Generated control candidate 18: bowtie-jeremy accessory with cheerful_wave motion."
+    },
+    {
+      "id": "gen-038-male-bowtie-jeremy-talk-idle",
+      "display_name": "Sora Talks",
+      "persona": "host character who talks on command",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bowtie_jeremy.glb",
+      "category": "neck_chest",
+      "animation_preset": "talk_idle",
+      "license": "Creative Commons Attribution 3.0",
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "creator": "jeremy",
+      "tags": [
+        "generated",
+        "controllable",
+        "base:male-hairsample",
+        "bowtie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "creator:jeremy",
+        "talk-idle",
+        "dialogue"
+      ],
+      "notes": "Generated control candidate 38: bowtie-jeremy accessory with talk_idle motion."
+    },
+    {
+      "id": "gen-058-female-bowtie-jeremy-look-around",
+      "display_name": "Miri Scans",
+      "persona": "host character who scans on command",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bowtie_jeremy.glb",
+      "category": "neck_chest",
+      "animation_preset": "look_around",
+      "license": "Creative Commons Attribution 3.0",
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "creator": "jeremy",
+      "tags": [
+        "generated",
+        "controllable",
+        "base:female-hairsample",
+        "bowtie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "creator:jeremy",
+        "look-around",
+        "ambient"
+      ],
+      "notes": "Generated control candidate 58: bowtie-jeremy accessory with look_around motion."
+    },
+    {
+      "id": "gen-078-male-bowtie-jeremy-confident-point",
+      "display_name": "Nova Points",
+      "persona": "host character who points on command",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bowtie_jeremy.glb",
+      "category": "neck_chest",
+      "animation_preset": "confident_point",
+      "license": "Creative Commons Attribution 3.0",
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "creator": "jeremy",
+      "tags": [
+        "generated",
+        "controllable",
+        "base:male-hairsample",
+        "bowtie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "creator:jeremy",
+        "point",
+        "guide"
+      ],
+      "notes": "Generated control candidate 78: bowtie-jeremy accessory with confident_point motion."
+    }
+  ]
+}

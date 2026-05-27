@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-pixel-rin.glb" id="1_character"]
+
+[node name="ctrl_pixel_rin" instance=ExtResource("1_character")]
+metadata/id = "ctrl-pixel-rin"
+metadata/display_name = "Pixel Rin"
+metadata/persona = "playful meme-energy character"
+metadata/tags = "controllable,glasses,face,cheerful,wave,expressive"

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/chunked-live-004-020.glb" id="1_character"]
+
+[node name="chunked_live_004_020" instance=ExtResource("1_character")]
+metadata/id = "chunked-live-004-020"
+metadata/display_name = "Chunked-Live-004 020 Female Pixel Glasses Ipoly3D Present Explain"
+metadata/persona = "streamer character who explains on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,pixel-glasses-ipoly3d,head-face,license:cc0,attribution:not-required,creator:ipoly3d,presenter,explain,dialogue,face:talking-soft,lip-sync,vrm-visemes,source:chunked-live-004-chunk-001,quality:ship,source:sparse-next80"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/a7dfe07ac8db2576.face.json"
+metadata/lipsync_cue_count = 35
+metadata/lipsync_duration = 6.240
+metadata/lipsync_visemes = "rest,ee,aa,oh,ou"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/chunked-live-004-020_animation.json"

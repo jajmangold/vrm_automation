@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/necktie-low-002.glb" id="1_character"]
+
+[node name="necktie_low_002" instance=ExtResource("1_character")]
+metadata/id = "necktie-low-002"
+metadata/display_name = "Anchor Candidate Necktie Male"
+metadata/persona = "male accessory fit candidate for necktie-jeremy"
+metadata/tags = "generated,anchor-candidate,necktie-jeremy,neck-chest,base:male-hairsample,source:anchor-fit-suggestion,review:neck-chest,quality:ship,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,source:necktie-low-probe"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/necktie-low-002_animation.json"

@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "bone_roles": {
+    "hips": ["hips", "pelvis"],
+    "spine": ["spine", "body"],
+    "chest": ["upperchest", "chest"],
+    "neck": ["neck"],
+    "head": ["head"],
+    "left_hand": ["left hand", "left wrist", "J_Bip_L_Hand"],
+    "right_hand": ["right hand", "right wrist", "J_Bip_R_Hand"]
+  },
+  "profiles": [
+    {
+      "id": "neck_chest.tie",
+      "category": "neck_chest",
+      "keywords": ["tie", "necktie"],
+      "anchors": {
+        "primary": "neck-chest-collar-center",
+        "asset": "tie-knot-top",
+        "snap_policy": "character_anchor_to_asset_anchor"
+      },
+      "placement": {
+        "target_prompts": ["necktie blade", "tie knot", "hanging necktie"],
+        "mask_policy": "template-compatible-union",
+        "optimizer": "blender-silhouette-cma-es",
+        "optimize": ["location", "rotation_euler", "scale"],
+        "scale_policy": "lock_when_target_smaller_than_template"
+      },
+      "binding": {
+        "mode": "skinned_weighted",
+        "target_bone_role": "chest",
+        "bind_roles": ["spine", "chest", "neck"],
+        "weighting_mode": "upper-torso-neck"
+      },
+      "motion": {
+        "mode": "skinned_static",
+        "inherits": ["torso", "neck"]
+      },
+      "validation": {
+        "required_views": ["front", "left45", "right45"],
+        "min_mask_iou": 0.72,
+        "checks": ["collision", "floating", "wrong_depth", "offscreen"]
+      }
+    },
+    {
+      "id": "neck_chest.bowtie",
+      "category": "neck_chest",
+      "keywords": ["bowtie", "bow tie"],
+      "anchors": {
+        "primary": "neck-chest-collar-center",
+        "asset": "bowtie-center",
+        "snap_policy": "character_anchor_to_asset_anchor"
+      },
+      "placement": {
+        "target_prompts": ["bowtie", "bow tie at collar"],
+        "mask_policy": "single-object",
+        "optimizer": "blender-silhouette-cma-es",
+        "optimize": ["location", "rotation_euler", "scale"]
+      },
+      "binding": {
+        "mode": "skinned_weighted",
+        "target_bone_role": "chest",
+        "bind_roles": ["spine", "chest", "neck"],
+        "weighting_mode": "upper-torso-neck"
+      },
+      "motion": {
+        "mode": "skinned_static",
+        "inherits": ["torso", "neck"]
+      },
+      "validation": {
+        "required_views": ["front", "left45", "right45"],
+        "min_mask_iou": 0.75,
+        "checks": ["collision", "floating", "wrong_depth", "offscreen"]
+      }
+    },
+    {
+      "id": "torso_back.backpack",
+      "category": "torso_back",
+      "keywords": ["backpack", "knapsack"],
+      "anchors": {
+        "primary": "torso-back-spine-center",
+        "asset": "backpack-back-panel-center",
+        "snap_policy": "surface_gap"
+      },
+      "placement": {
+        "target_prompts": ["backpack on back"],
+        "mask_policy": "object-visible-surface",
+        "optimizer": "blender-silhouette-cma-es",
+        "optimize": ["location", "rotation_euler", "scale"]
+      },
+      "binding": {
+        "mode": "skinned_weighted",
+        "target_bone_role": "spine",
+        "bind_roles": ["hips", "spine", "chest"],
+        "weighting_mode": "height-band-torso"
+      },
+      "motion": {
+        "mode": "skinned_static",
+        "inherits": ["torso"]
+      },
+      "validation": {
+        "required_views": ["back", "left45", "right45"],
+        "min_mask_iou": 0.70,
+        "checks": ["collision", "floating", "wrong_depth", "offscreen"]
+      }
+    },
+    {
+      "id": "hand_held.briefcase",
+      "category": "hand_held",
+      "keywords": ["briefcase", "suitcase", "toolbox"],
+      "anchors": {
+        "primary": "right-hand-palm-grip",
+        "asset": "handle-center",
+        "alternate_primary": ["left-hand-palm-grip"],
+        "snap_policy": "socket_to_handle"
+      },
+      "placement": {
+        "target_prompts": ["briefcase held by handle", "hand holding suitcase"],
+        "mask_policy": "object-plus-contact",
+        "optimizer": "blender-silhouette-cma-es",
+        "optimize": ["location", "rotation_euler", "scale"]
+      },
+      "binding": {
+        "mode": "rigid_socket",
+        "target_bone_role": "right_hand",
+        "bind_roles": ["right_hand"],
+        "weighting_mode": "single-bone"
+      },
+      "motion": {
+        "mode": "socket_swing",
+        "inherits": ["hand"],
+        "pivot_anchor": "handle-center",
+        "limits_degrees": {"x": 18, "y": 8, "z": 12}
+      },
+      "validation": {
+        "required_views": ["front", "side", "hand_closeup"],
+        "min_mask_iou": 0.68,
+        "checks": ["hand_contact", "collision", "floating", "offscreen"]
+      }
+    },
+    {
+      "id": "head_face.glasses",
+      "category": "head_face",
+      "keywords": ["glasses", "sunglasses", "goggles"],
+      "anchors": {
+        "primary": "head-face-eye-line",
+        "asset": "glasses-bridge",
+        "snap_policy": "character_anchor_to_asset_anchor"
+      },
+      "placement": {
+        "target_prompts": ["glasses on face", "eyeglasses"],
+        "mask_policy": "single-object",
+        "optimizer": "blender-silhouette-cma-es",
+        "optimize": ["location", "rotation_euler", "scale"]
+      },
+      "binding": {
+        "mode": "rigid_parent",
+        "target_bone_role": "head",
+        "bind_roles": ["head"],
+        "weighting_mode": "single-bone"
+      },
+      "motion": {
+        "mode": "rigid_follow",
+        "inherits": ["head"]
+      },
+      "validation": {
+        "required_views": ["front", "left45", "right45"],
+        "min_mask_iou": 0.72,
+        "checks": ["face_contact", "wrong_depth", "offscreen"]
+      }
+    }
+  ]
+}

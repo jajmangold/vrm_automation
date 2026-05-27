@@ -1,0 +1,28 @@
+{
+  "defaults": {
+    "accessory": "glasses",
+    "animation": "talk_idle",
+    "base": "female",
+    "batch_id": "text-batch2",
+    "normalizer": "auto",
+    "render_profile": "fast_lipsync",
+    "tts_service": "voice_design",
+    "voice": "warm clear presenter voice"
+  },
+  "people": [
+    {
+      "id": "text-batch-001",
+      "name": "Text Batch 001",
+      "seed": 201,
+      "text": "Hello. I am the first generated host in this fast batch."
+    },
+    {
+      "accessory": "pixel glasses",
+      "base": "male",
+      "id": "text-batch-002",
+      "name": "Text Batch 002",
+      "seed": 202,
+      "text": "And I am the second generated host, rendered in the same batch."
+    }
+  ]
+}

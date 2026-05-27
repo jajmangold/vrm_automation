@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/gen-090-female-backpack-quaternius-alt-shy-bounce.glb" id="1_character"]
+
+[node name="gen_090_female_backpack_quaternius_alt_shy_bounce" instance=ExtResource("1_character")]
+metadata/id = "gen-090-female-backpack-quaternius-alt-shy-bounce"
+metadata/display_name = "Miri Waits"
+metadata/persona = "explorer character who waits on command"
+metadata/tags = "generated,controllable,base:female-hairsample,backpack-quaternius-alt,torso-back,license:cc0,attribution:not-required,quality:ship,creator:quaternius,shy,subtle"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/gen-090-female-backpack-quaternius-alt-shy-bounce_animation.json"

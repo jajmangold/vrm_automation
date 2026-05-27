@@ -1,0 +1,41 @@
+{
+  "defaults": {
+    "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+    "render_angles": "front,side",
+    "render_pose_stills": "1"
+  },
+  "jobs": [
+    {
+      "id": "poly-pizza-backpack-quaternius",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/backpack_quaternius.glb",
+      "category": "torso_back",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/vF7TuXCPDH",
+      "notes": "Real CC0 accessory asset. Current importer treats it as torso-attached geometry for failure-mode testing."
+    },
+    {
+      "id": "poly-pizza-bag-quaternius",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bag_quaternius.glb",
+      "category": "torso_back",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/Wq1JPPqHZS",
+      "notes": "Real CC0 accessory asset. Current importer treats it as torso-attached geometry for failure-mode testing."
+    },
+    {
+      "id": "poly-pizza-necklace-quaternius",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necklace_quaternius.glb",
+      "category": "neck_chest",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/Mezewzksj5",
+      "notes": "Real CC0 accessory asset. Good candidate for future neck/chest classifier."
+    },
+    {
+      "id": "poly-pizza-pixel-glasses-ipoly3d",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/pixel_glasses_ipoly3d.glb",
+      "category": "head_face",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/VQuqLwtyTa",
+      "notes": "Real CC0 head accessory. Expected to reveal current lack of head accessory placement."
+    }
+  ]
+}

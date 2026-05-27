@@ -1,0 +1,82 @@
+{
+  "defaults": {
+    "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+    "render_angles": "front,portrait",
+    "render_pose_frames": "24,72",
+    "render_pose_stills": "1",
+    "render_width": "640",
+    "render_height": "960",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "cache_base_scenes": "1"
+  },
+  "jobs": [
+    {
+      "id": "anchor-probe-hard-hat-google-rotation-001",
+      "display_name": "Hard Hat Rotation Probe",
+      "persona": "builder character for headwear orientation QA",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/hard_hat_google.glb",
+      "category": "head_face",
+      "animation_preset": "cheerful_wave",
+      "facial_preset": "happy",
+      "license": "Creative Commons Attribution 3.0",
+      "source_url": "https://poly.pizza/m/9AMKar2NlkX",
+      "creator": "Poly by Google",
+      "tags": [
+        "generated",
+        "anchor-probe",
+        "hard-hat-google",
+        "head-face",
+        "orientation-probe"
+      ],
+      "notes": "Validation probe for hard-hat rotation_z_degrees catalog override."
+    },
+    {
+      "id": "anchor-probe-crown-quaternius-rotation-001",
+      "display_name": "Crown Rotation Baseline",
+      "persona": "royal character for headwear orientation QA",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/crown_quaternius.glb",
+      "category": "head_face",
+      "animation_preset": "cheerful_wave",
+      "facial_preset": "happy",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/i0PZVuVlYv",
+      "creator": "Quaternius",
+      "tags": [
+        "generated",
+        "anchor-probe",
+        "crown-quaternius",
+        "head-face",
+        "orientation-probe"
+      ],
+      "notes": "Baseline probe for crown headwear placement after rotation support."
+    },
+    {
+      "id": "anchor-probe-crown-quaternius-fit-001",
+      "display_name": "Crown Fit Probe",
+      "persona": "royal character for smaller crown fit QA",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/crown_quaternius.glb",
+      "category": "head_face",
+      "animation_preset": "cheerful_wave",
+      "facial_preset": "happy",
+      "license": "CC0 1.0",
+      "source_url": "https://poly.pizza/m/i0PZVuVlYv",
+      "creator": "Quaternius",
+      "tags": [
+        "generated",
+        "anchor-probe",
+        "crown-quaternius",
+        "head-face",
+        "fit-probe"
+      ],
+      "notes": "Smaller crown probe for catalog fit review.",
+      "outfit_anchor": "hat_top",
+      "outfit_fit_scope": "headwear",
+      "outfit_scale_axis": "height",
+      "outfit_target_size_ratio": 0.1,
+      "outfit_vertical_center_ratio": 0.985,
+      "outfit_surface_offset_ratio": 0.045
+    }
+  ]
+}

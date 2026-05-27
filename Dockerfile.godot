@@ -1,0 +1,9 @@
+ARG GODOT_VERSION=4.6.3
+FROM barichello/godot-ci:${GODOT_VERSION}
+
+USER root
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends fontconfig libfontconfig1 xvfb \
+  && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace/godot_viewer

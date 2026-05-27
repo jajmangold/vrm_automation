@@ -1,0 +1,54 @@
+{
+  "defaults": {
+    "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+    "render_angles": "front,side,portrait",
+    "render_pose_frames": "24,48,72",
+    "render_pose_stills": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "cache_base_scenes": "1"
+  },
+  "jobs": [
+    {
+      "id": "quick-person-backpack-cheerful",
+      "display_name": "Ari Trailwave",
+      "persona": "outgoing day-trip friend",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/backpack_quaternius.glb",
+      "category": "torso_back",
+      "animation_preset": "cheerful_wave",
+      "tags": ["fast-review", "cheerful", "travel", "backpack", "full-body"],
+      "notes": "Fast review character: backpack accessory with higher-energy wave."
+    },
+    {
+      "id": "quick-person-bag-shy",
+      "display_name": "Mina Softstep",
+      "persona": "reserved student with a small bounce",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bag_quaternius.glb",
+      "category": "torso_back",
+      "animation_preset": "shy_bounce",
+      "tags": ["fast-review", "shy", "bag", "subtle", "full-body"],
+      "notes": "Fast review character: bag accessory with smaller shy motion."
+    },
+    {
+      "id": "quick-person-necklace-idle",
+      "display_name": "Nora Keepsake",
+      "persona": "calm portrait-ready character",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necklace_quaternius.glb",
+      "category": "neck_chest",
+      "animation_preset": "idle_turn",
+      "tags": ["fast-review", "calm", "necklace", "portrait", "idle-turn"],
+      "notes": "Fast review character: necklace accessory with subtle turn."
+    },
+    {
+      "id": "quick-person-glasses-cheerful",
+      "display_name": "Pixel Rin",
+      "persona": "playful meme-energy character",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/pixel_glasses_ipoly3d.glb",
+      "category": "head_face",
+      "animation_preset": "cheerful_wave",
+      "tags": ["fast-review", "cheerful", "glasses", "face", "expressive"],
+      "notes": "Fast review character: head/face accessory with energetic pose."
+    }
+  ]
+}

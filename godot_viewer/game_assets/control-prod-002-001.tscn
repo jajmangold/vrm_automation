@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/control-prod-002-001.glb" id="1_character"]
+
+[node name="control_prod_002_001" instance=ExtResource("1_character")]
+metadata/id = "control-prod-002-001"
+metadata/display_name = "Control Prod 002 001 Female Aviator Sunglasses Google Talk Idle"
+metadata/persona = "pilot character who talks on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,aviator-sunglasses-google,head-face,license:cc-by-3.0,attribution:required,quality:ship,creator:poly-by-google,calibration:image-guided-anchor,anchor:head-face-eye-line,anchor-validation:ok,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/284e7c965239a326.face.json"
+metadata/lipsync_cue_count = 26
+metadata/lipsync_duration = 3.440
+metadata/lipsync_visemes = "rest,ou,aa,ee,oh"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/control-prod-002-001_animation.json"

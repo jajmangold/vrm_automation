@@ -1,0 +1,41 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "front,portrait",
+    "render_engine": "BLENDER_WORKBENCH",
+    "render_height": "960",
+    "render_pose_frames": "29",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "display_name": "Necktie Qwen Probe",
+      "facial_preset": "neutral",
+      "id": "necktie-qwen-001-probe",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Temporary probe using canonical Qwen/SAM necktie placement result; not catalog-promoted.",
+      "outfit_fit_scope": "neck-chest",
+      "outfit_horizontal_center_offset_ratio": 0.0066,
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necktie_jeremy.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.26,
+      "outfit_target_size_ratio": 0.232,
+      "outfit_vertical_center_ratio": 0.7327,
+      "persona": "male necktie placement calibration probe",
+      "tags": [
+        "generated",
+        "placement-probe",
+        "qwen-image-edit",
+        "sam31",
+        "necktie-jeremy",
+        "canonical-placement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "portrait",
+    "render_height": "960",
+    "render_pose_frames": "3,9,16",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "thinking_idle",
+      "category": "head_face",
+      "creator": "Poly by Google",
+      "display_name": "Web Sample Wizard 001",
+      "facial_preset": "neutral",
+      "id": "web-sample-wizard-001",
+      "license": "Creative Commons Attribution 3.0",
+      "lipsync_timeline_json": "/workspace/outputs/lipsync/web-sample-wizard-001_rhubarb.face.json",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Instant generated person: wizard-hat-google accessory with thinking_idle motion.",
+      "outfit_anchor": "hat_top",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/wizard_hat_google.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.045,
+      "outfit_target_size_ratio": 0.105,
+      "outfit_vertical_center_ratio": 0.94,
+      "persona": "mage character who thinks on command",
+      "source_url": "https://poly.pizza/m/7VVumyY7L_u",
+      "tags": [
+        "generated",
+        "controllable",
+        "instant",
+        "base:male-hairsample",
+        "wizard-hat-google",
+        "head-face",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "quality:ship",
+        "creator:poly-by-google",
+        "thinking",
+        "idle",
+        "subtle",
+        "face:neutral",
+        "lip-sync",
+        "vrm-visemes"
+      ]
+    }
+  ]
+}

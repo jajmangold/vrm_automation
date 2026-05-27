@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/auto-bowtie-anchor-001.glb" id="1_character"]
+
+[node name="auto_bowtie_anchor_001" instance=ExtResource("1_character")]
+metadata/id = "auto-bowtie-anchor-001"
+metadata/display_name = "Auto Bowtie Anchor"
+metadata/persona = "host character who talks on command"
+metadata/tags = "generated,controllable,instant,base:male-hairsample,bowtie-jeremy,neck-chest,license:cc-by-3.0,attribution:required,creator:jeremy,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes,source:auto-bowtie-anchor-001,quality:ship,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,source:sparse-final80"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/person_factory_hello_rhubarb.face.json"
+metadata/lipsync_cue_count = 25
+metadata/lipsync_duration = 4.000
+metadata/lipsync_visemes = "rest,aa,oh,ou,ee"
+metadata/lipsync_source = "rhubarb"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/auto-bowtie-anchor-001_animation.json"

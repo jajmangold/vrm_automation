@@ -1,0 +1,94 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_engine": "BLENDER_WORKBENCH",
+    "render_height": "960",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "torso_back",
+      "creator": "Quaternius",
+      "display_name": "Anchor Candidate Backpack Female",
+      "export_blend": "0",
+      "export_glb": "1",
+      "export_vrm": "0",
+      "facial_preset": "neutral",
+      "id": "backpack-alt-clamped-001",
+      "license": "CC0 1.0",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "notes": "Probe render for backpack-quaternius-alt using batch SAM anchor suggestion; not catalog-promoted.",
+      "outfit_fit_scope": "torso",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/backpack_quaternius_alt.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.34,
+      "outfit_target_size_ratio": 0.32,
+      "outfit_vertical_center_ratio": 0.6185,
+      "persona": "female accessory fit candidate for backpack-quaternius-alt",
+      "render_angles": "front,portrait,back",
+      "render_height": "960",
+      "render_pose_frames": "24,72",
+      "render_width": "640",
+      "source_url": "https://poly.pizza/m/2g9Jm7kvIU",
+      "tags": [
+        "generated",
+        "anchor-candidate",
+        "backpack-quaternius-alt",
+        "torso-back",
+        "anchor:torso-back-back-center",
+        "base:female-hairsample",
+        "source:anchor-fit-suggestion",
+        "review:torso-back"
+      ]
+    },
+    {
+      "animation_preset": "talk_idle",
+      "category": "torso_back",
+      "creator": "Quaternius",
+      "display_name": "Anchor Candidate Backpack Male",
+      "export_blend": "0",
+      "export_glb": "1",
+      "export_vrm": "0",
+      "facial_preset": "neutral",
+      "id": "backpack-alt-clamped-002",
+      "license": "CC0 1.0",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Probe render for backpack-quaternius-alt using batch SAM anchor suggestion; not catalog-promoted.",
+      "outfit_fit_scope": "torso",
+      "outfit_model": "/workspace/input/outfits/poly_pizza/backpack_quaternius_alt.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.34,
+      "outfit_target_size_ratio": 0.32,
+      "outfit_vertical_center_ratio": 0.6185,
+      "persona": "male accessory fit candidate for backpack-quaternius-alt",
+      "render_angles": "front,portrait,back",
+      "render_height": "960",
+      "render_pose_frames": "24,72",
+      "render_width": "640",
+      "source_url": "https://poly.pizza/m/2g9Jm7kvIU",
+      "tags": [
+        "generated",
+        "anchor-candidate",
+        "backpack-quaternius-alt",
+        "torso-back",
+        "anchor:torso-back-back-center",
+        "base:male-hairsample",
+        "source:anchor-fit-suggestion",
+        "review:torso-back"
+      ]
+    }
+  ],
+  "source": {
+    "bases": [
+      "female",
+      "male"
+    ],
+    "include_review": true,
+    "suggestion_count": 1
+  }
+}

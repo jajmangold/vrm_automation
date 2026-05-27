@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+    "render_angles": "front,side",
+    "render_pose_stills": "1"
+  },
+  "jobs": [
+    {
+      "id": "sample-torso-sash",
+      "outfit_model": "/workspace/input/outfits/sample_torso_sash.glb",
+      "license": "local-generated-test-asset",
+      "source_url": "file:///srv/nvme-data/containers/projects/vrm_automation/scripts/create_sample_outfit.py",
+      "notes": "Generated validation asset for importer, fit check, and batch workflow smoke tests."
+    }
+  ]
+}

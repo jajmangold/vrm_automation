@@ -1,0 +1,11 @@
+addons/*.zip
+input/*
+logs/*
+outputs/*
+results/*
+!input/.gitkeep
+!logs/.gitkeep
+!outputs/.gitkeep
+!results/.gitkeep
+cache/
+godot_viewer/game_assets/glb/

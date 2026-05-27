@@ -1,0 +1,15 @@
+{
+  "requests": [
+    {
+      "id": "web-control-api-002-001",
+      "name": "Web Control Api 002 001 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "This person was queued from the web app.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    }
+  ]
+}

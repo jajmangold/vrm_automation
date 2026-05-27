@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/web-thumb-prod-256-fast-001-246.glb" id="1_character"]
+
+[node name="web_thumb_prod_256_fast_001_246" instance=ExtResource("1_character")]
+metadata/id = "web-thumb-prod-256-fast-001-246"
+metadata/display_name = "Web Thumb Prod 256 Fast 001 246 Female Necktie Jeremy Present Explain"
+metadata/persona = "presenter character who explains on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,necktie-jeremy,neck-chest,license:cc-by-3.0,attribution:required,quality:ship,creator:jeremy,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,presenter,explain,dialogue,face:talking-soft,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/0a46dfa54e181139.face.json"
+metadata/lipsync_cue_count = 26
+metadata/lipsync_duration = 2.567
+metadata/lipsync_visemes = "rest,ih,aa,oh,ee,ou"
+metadata/lipsync_source = "phoneme-events"
+metadata/lipsync_source_event_count = 26
+metadata/lipsync_source_phoneme_count = 26
+metadata/lipsync_source_phonemes = "N,IY1,AH0,SIL,B,R,AO1,T,EH1,D,P,CH,AY1,S,K,UW1,L"
+metadata/animation_report = "/workspace/results/batch/web-thumb-prod-256-fast-001-246_animation.json"

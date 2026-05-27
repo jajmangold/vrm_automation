@@ -1,0 +1,26 @@
+{
+  "requests": [
+    {
+      "id": "web-chunked-cache-001-chunk-001-001",
+      "name": "Web Chunked Cache 001 Chunk 001 001 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "We can generate controllable talking people quickly, validate lip sync in Godot, and review the batch in the browser.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "web-chunked-cache-001-chunk-001-002",
+      "name": "Web Chunked Cache 001 Chunk 001 002 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Here is another fast generated performer with cached dialogue and reusable lip sync.",
+      "audio_cache_key": "a7dfe07ac8db2576",
+      "lipsync_timeline": "outputs/lipsync/cache/a7dfe07ac8db2576.face.json"
+    }
+  ]
+}

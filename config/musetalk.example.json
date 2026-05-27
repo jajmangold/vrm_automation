@@ -1,0 +1,18 @@
+{
+  "backend": "musetalk",
+  "character_id": "gen-004-female-glasses-cheerful-wave",
+  "fps": 25,
+  "inference_config": "/workspace/results/musetalk/gen-004-female-glasses-cheerful-wave.yaml",
+  "mode": "talking-video",
+  "result_dir": "/workspace/outputs/musetalk",
+  "schema": "vrm-person-factory.musetalk-job.v1",
+  "tasks": {
+    "task_0": {
+      "audio_path": "/workspace/input/audio/hello.wav",
+      "result_name": "gen-004-female-glasses-cheerful-wave_hello.mp4",
+      "video_path": "/workspace/outputs/batch/gen-004-female-glasses-cheerful-wave_pose_renders/pose_portrait_0024.png"
+    }
+  },
+  "use_float16": true,
+  "version": "v15"
+}

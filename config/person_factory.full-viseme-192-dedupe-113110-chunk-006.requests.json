@@ -1,0 +1,268 @@
+{
+  "requests": [
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-121",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 121 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-122",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 122 Male Bowtie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-123",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 123 Female Bowtie Jeremy Confident Point",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-124",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 124 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-125",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 125 Female Bowtie Jeremy Present Explain",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-126",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 126 Male Bowtie Jeremy Confident Point",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-127",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 127 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-128",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 128 Male Bowtie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-129",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 129 Female Bowtie Jeremy Confident Point",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-130",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 130 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-131",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 131 Female Bowtie Jeremy Present Explain",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-132",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 132 Male Bowtie Jeremy Confident Point",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-133",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 133 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-134",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 134 Male Bowtie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-135",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 135 Female Bowtie Jeremy Confident Point",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-136",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 136 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-137",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 137 Female Bowtie Jeremy Present Explain",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-138",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 138 Male Bowtie Jeremy Confident Point",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-139",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 139 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-140",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 140 Male Bowtie Jeremy Present Explain",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-141",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 141 Female Bowtie Jeremy Confident Point",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-142",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 142 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-143",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 143 Female Bowtie Jeremy Present Explain",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    },
+    {
+      "id": "full-viseme-192-dedupe-113110-chunk-006-144",
+      "name": "Full Viseme 192 Dedupe 113110 Chunk 006 144 Male Bowtie Jeremy Confident Point",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Pat met Tim. Go put food.",
+      "audio_cache_key": "683aff4ae080c56e",
+      "lipsync_timeline": "outputs/lipsync/cache/683aff4ae080c56e.face.json"
+    }
+  ]
+}

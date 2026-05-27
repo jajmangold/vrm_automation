@@ -1,0 +1,26 @@
+{
+  "requests": [
+    {
+      "id": "control-prod-003-001",
+      "name": "Control Prod 003 001 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "This is a cached promoted control batch.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-003-002",
+      "name": "Control Prod 003 002 Female Necklace Quaternius Confident Point",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "This is a cached promoted control batch.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    }
+  ]
+}

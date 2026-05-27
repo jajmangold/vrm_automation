@@ -1,0 +1,14 @@
+{
+  "overrides": [
+    {
+      "from": "/workspace/outputs/lipsync/person_factory_hello.face.json",
+      "to": "/workspace/outputs/lipsync/person_factory_hello_rhubarb.face.json",
+      "reason": "Use the existing Rhubarb timeline generated from person_factory_hello_clean.wav instead of the deterministic text-estimate timeline."
+    },
+    {
+      "from": "/workspace/outputs/lipsync/person_factory_hello_stt_fast.face.json",
+      "to": "/workspace/outputs/lipsync/person_factory_hello_rhubarb.face.json",
+      "reason": "Use the existing Rhubarb timeline generated from person_factory_hello_clean.wav instead of the STT text-estimate timeline."
+    }
+  ]
+}

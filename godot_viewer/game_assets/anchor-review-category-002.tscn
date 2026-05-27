@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/anchor-review-category-002.glb" id="1_character"]
+
+[node name="anchor_review_category_002" instance=ExtResource("1_character")]
+metadata/id = "anchor-review-category-002"
+metadata/display_name = "Anchor Candidate Backpack Male"
+metadata/persona = "male accessory fit candidate for backpack-j-toastie"
+metadata/tags = "generated,anchor-candidate,backpack-j-toastie,torso-back,base:male-hairsample,source:anchor-fit-suggestion,review:torso-back,quality:ship,calibration:image-guided-anchor,anchor:torso-back-back-center,anchor-validation:ok,source:anchor-review-category-probe"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/anchor-review-category-002_animation.json"

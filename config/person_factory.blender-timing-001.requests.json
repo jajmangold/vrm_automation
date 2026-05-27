@@ -1,0 +1,15 @@
+{
+  "requests": [
+    {
+      "id": "blender-timing-001-001",
+      "name": "Blender Timing 001 001 Male Bowtie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "fast_lipsync",
+      "text": "Measure one character so the next render speed target is obvious.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    }
+  ]
+}

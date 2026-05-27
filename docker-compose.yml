@@ -1,0 +1,357 @@
+services:
+  blender-vrm:
+    build:
+      context: .
+      args:
+        BLENDER_VERSION: ${BLENDER_VERSION:-4.2.0}
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      VRM_ADDON_URL: ${VRM_ADDON_URL:-https://github.com/saturday06/VRM-Addon-for-Blender/releases/download/v4.2.0/VRM_Addon_for_Blender-4_2_0.zip}
+      MMD_TOOLS_URL: ${MMD_TOOLS_URL:-https://extensions.blender.org/download/sha256:95ae385a801badafe73251d584a33779a95001912881eef999f9bb4af4c35c87/add-on-mmd-tools-v4.5.11.zip}
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      MATERIAL_COMBINER_URL: ${MATERIAL_COMBINER_URL:-https://github.com/Grim-es/material-combiner-addon/releases/download/2.1.2.9/material-combiner-addon-master.zip}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command: ["blender", "--background", "--python", "scripts/blender_smoke.py"]
+
+  download-addons:
+    image: curlimages/curl:8.11.1
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      VRM_ADDON_URL: ${VRM_ADDON_URL:-https://github.com/saturday06/VRM-Addon-for-Blender/releases/download/v4.2.0/VRM_Addon_for_Blender-4_2_0.zip}
+      MMD_TOOLS_URL: ${MMD_TOOLS_URL:-https://extensions.blender.org/download/sha256:95ae385a801badafe73251d584a33779a95001912881eef999f9bb4af4c35c87/add-on-mmd-tools-v4.5.11.zip}
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      MATERIAL_COMBINER_URL: ${MATERIAL_COMBINER_URL:-https://github.com/Grim-es/material-combiner-addon/releases/download/2.1.2.9/material-combiner-addon-master.zip}
+    volumes:
+      - .:/workspace
+    entrypoint: ["/bin/sh", "scripts/download_addons.sh"]
+    profiles: ["tools"]
+
+  download-base-models:
+    image: python:3.12-slim
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    command:
+      - python3
+      - scripts/download_base_models.py
+      - config/base_models.json
+      - results/base_model_manifest.json
+    profiles: ["tools"]
+
+  inspect-model:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      INPUT_MODEL: ${INPUT_MODEL:-/workspace/input/model.vrm}
+      OUTPUT_JSON: ${OUTPUT_JSON:-/workspace/results/model_inspection.json}
+      MATERIAL_AUDIT_JSON: ${MATERIAL_AUDIT_JSON:-/workspace/results/material_audit.json}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command:
+      - blender
+      - --background
+      - --python
+      - scripts/install_addons.py
+      - --python
+      - scripts/inspect_model.py
+      - --python
+      - scripts/material_audit.py
+      - --
+      - ${INPUT_MODEL:-/workspace/input/model.vrm}
+      - ${OUTPUT_JSON:-/workspace/results/model_inspection.json}
+      - ${MATERIAL_AUDIT_JSON:-/workspace/results/material_audit.json}
+    profiles: ["tools"]
+
+  create-sample-outfit:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      SAMPLE_OUTFIT_PATH: ${SAMPLE_OUTFIT_PATH:-/workspace/input/outfits/sample_torso_sash.glb}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command:
+      - blender
+      - --background
+      - --python
+      - scripts/create_sample_outfit.py
+      - --
+      - ${SAMPLE_OUTFIT_PATH:-/workspace/input/outfits/sample_torso_sash.glb}
+    profiles: ["tools"]
+
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile.webapp
+    image: vrm-automation-webapp:latest
+    working_dir: ${PROJECT_CONTAINER_PATH:-/srv/nvme-data/containers/projects/vrm_automation}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    group_add:
+      - "${DOCKER_GID:-116}"
+    environment:
+      WEBAPP_ROOT: ${PROJECT_CONTAINER_PATH:-/srv/nvme-data/containers/projects/vrm_automation}
+      WORKDIR: ${PROJECT_CONTAINER_PATH:-/srv/nvme-data/containers/projects/vrm_automation}/outputs/batch
+      PORT: ${GALLERY_WEBAPP_PORT:-8765}
+      WEBAPP_GALLERY_FILE: ${WEBAPP_GALLERY_FILE:-person_factory_all.html}
+      WEBAPP_MAX_CONCURRENT_JOBS: ${WEBAPP_MAX_CONCURRENT_JOBS:-4}
+      PERSON_FACTORY_CHUNK_WORKERS: ${PERSON_FACTORY_CHUNK_WORKERS:-4}
+      PERSON_FACTORY_RENDER_CHUNK_WORKERS: ${PERSON_FACTORY_RENDER_CHUNK_WORKERS:-2}
+      PERSON_FACTORY_MAX_BATCH_JOBS: ${PERSON_FACTORY_MAX_BATCH_JOBS:-24}
+      PERSON_FACTORY_MAX_CHUNKED_MATRIX_JOBS: ${PERSON_FACTORY_MAX_CHUNKED_MATRIX_JOBS:-768}
+      PERSON_FACTORY_ACCESSORY_QUALITIES: ${PERSON_FACTORY_ACCESSORY_QUALITIES:-ship}
+      GODOT_VALIDATION_URLS: ${GODOT_VALIDATION_URLS:-}
+    volumes:
+      - .:/workspace
+      - .:${PROJECT_CONTAINER_PATH:-/srv/nvme-data/containers/projects/vrm_automation}
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: ["/bin/sh", "scripts/serve_gallery.sh"]
+    ports:
+      - "${GALLERY_WEBAPP_HOST_PORT:-8780}:${GALLERY_WEBAPP_PORT:-8765}"
+    profiles: ["webapp"]
+
+  godot-viewer:
+    build:
+      context: .
+      dockerfile: Dockerfile.godot
+      args:
+        GODOT_VERSION: ${GODOT_VERSION:-4.6.3}
+    image: vrm-automation-godot:${GODOT_VERSION:-4.6.3}
+    working_dir: /workspace/godot_viewer
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      GODOT_CONTROL_PORT: ${GODOT_CONTROL_PORT:-8790}
+      GODOT_BATCH_RESULT_PATHS: ${GODOT_BATCH_RESULT_PATHS:-/workspace/results/person_factory_all_latest.json,/workspace/results/batch_person_factory_in_blender_latest.json,/workspace/results/batch_person_factory_now_latest.json,/workspace/results/batch_person_factory_next24_latest.json,/workspace/results/batch_person_factory_quality_next12_latest.json,/workspace/results/batch_person_factory_quality_torso_back2_latest.json,/workspace/results/batch_person_factory_facial_presets2_latest.json,/workspace/results/batch_person_factory_lipsync_phoneme1_latest.json,/workspace/results/batch_person_factory_standard_anim5_latest.json,/workspace/results/batch_person_factory_lipsync_stt1_latest.json,/workspace/results/batch_person_factory_lipsync_rhubarb1_latest.json}
+    volumes:
+      - .:/workspace
+    command:
+      - godot
+      - --headless
+      - --path
+      - /workspace/godot_viewer
+    ports:
+      - "${GODOT_CONTROL_HOST_PORT:-8790}:${GODOT_CONTROL_PORT:-8790}"
+    profiles: ["godot"]
+
+  godot-viewer-validator-2:
+    image: vrm-automation-godot:${GODOT_VERSION:-4.6.3}
+    working_dir: /workspace/godot_viewer
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    environment:
+      GODOT_CONTROL_PORT: 8790
+      GODOT_BATCH_RESULT_PATHS: ${GODOT_BATCH_RESULT_PATHS:-/workspace/results/person_factory_all_latest.json,/workspace/results/batch_person_factory_in_blender_latest.json,/workspace/results/batch_person_factory_now_latest.json,/workspace/results/batch_person_factory_next24_latest.json,/workspace/results/batch_person_factory_quality_next12_latest.json,/workspace/results/batch_person_factory_quality_torso_back2_latest.json,/workspace/results/batch_person_factory_facial_presets2_latest.json,/workspace/results/batch_person_factory_lipsync_phoneme1_latest.json,/workspace/results/batch_person_factory_standard_anim5_latest.json,/workspace/results/batch_person_factory_lipsync_stt1_latest.json,/workspace/results/batch_person_factory_lipsync_rhubarb1_latest.json}
+    volumes:
+      - .:/workspace
+    command:
+      - godot
+      - --headless
+      - --path
+      - /workspace/godot_viewer
+    profiles: ["godot-pool"]
+
+  musetalk:
+    build:
+      context: .
+      dockerfile: Dockerfile.musetalk
+      args:
+        MUSE_TALK_REPO: ${MUSE_TALK_REPO:-https://github.com/TMElyralab/MuseTalk.git}
+        MUSE_TALK_REF: ${MUSE_TALK_REF:-main}
+    image: vrm-automation-musetalk:${MUSE_TALK_REF:-main}
+    working_dir: /opt/MuseTalk
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: ["${MUSE_TALK_GPU_ID:-0}"]
+              capabilities: ["gpu"]
+    environment:
+      NVIDIA_VISIBLE_DEVICES: ${MUSE_TALK_GPU_ID:-0}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,video
+      LOCAL_UID: ${LOCAL_UID:-1000}
+      LOCAL_GID: ${LOCAL_GID:-1000}
+      MUSE_TALK_HOME: /opt/MuseTalk
+      MUSE_TALK_MODELS_DIR: ${MUSE_TALK_MODELS_DIR:-/opt/MuseTalk/models}
+      MUSE_TALK_JOB_JSON: ${MUSE_TALK_JOB_JSON:-/workspace/results/musetalk/latest_job.json}
+      TORCH_HOME: /root/.cache/torch
+    volumes:
+      - .:/workspace
+      - ${MUSE_TALK_MODEL_CACHE:-./input/musetalk_models}:${MUSE_TALK_MODELS_DIR:-/opt/MuseTalk/models}
+      - ${MUSE_TALK_TORCH_CACHE:-./input/musetalk_torch_cache}:/root/.cache/torch
+    entrypoint: ["/bin/sh", "/workspace/scripts/run_musetalk_job.sh"]
+    profiles: ["musetalk"]
+
+  animate-smoke:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      GENERATE_TEST_RIG: ${GENERATE_TEST_RIG:-1}
+      CLEAR_IMPORTED_ANIMATION: ${CLEAR_IMPORTED_ANIMATION:-1}
+      NORMALIZE_MATERIALS_FOR_GLB: ${NORMALIZE_MATERIALS_FOR_GLB:-1}
+      ANIMATE_EXPRESSIONS: ${ANIMATE_EXPRESSIONS:-1}
+      FACIAL_PRESET: ${FACIAL_PRESET:-}
+      LIPSYNC_TIMELINE_JSON: ${LIPSYNC_TIMELINE_JSON:-}
+      ANIMATION_PRESET: ${ANIMATION_PRESET:-wave}
+      ADD_OUTFIT_PROBE: ${ADD_OUTFIT_PROBE:-1}
+      OUTFIT_MODEL: ${OUTFIT_MODEL:-}
+      OUTFIT_CATEGORY: ${OUTFIT_CATEGORY:-}
+      OUTFIT_FRONT_OFFSET_RATIO: ${OUTFIT_FRONT_OFFSET_RATIO:-0.34}
+      OUTFIT_SCALE_AXIS: ${OUTFIT_SCALE_AXIS:-}
+      OUTFIT_TARGET_SIZE_RATIO: ${OUTFIT_TARGET_SIZE_RATIO:-}
+      OUTFIT_VERTICAL_CENTER_RATIO: ${OUTFIT_VERTICAL_CENTER_RATIO:-}
+      OUTFIT_HORIZONTAL_CENTER_OFFSET_RATIO: ${OUTFIT_HORIZONTAL_CENTER_OFFSET_RATIO:-}
+      OUTFIT_SURFACE_OFFSET_RATIO: ${OUTFIT_SURFACE_OFFSET_RATIO:-}
+      OUTFIT_ANCHOR_Z_PERCENTILE: ${OUTFIT_ANCHOR_Z_PERCENTILE:-}
+      OUTFIT_ROTATION_X_DEGREES: ${OUTFIT_ROTATION_X_DEGREES:-}
+      OUTFIT_ROTATION_Y_DEGREES: ${OUTFIT_ROTATION_Y_DEGREES:-}
+      OUTFIT_ROTATION_Z_DEGREES: ${OUTFIT_ROTATION_Z_DEGREES:-}
+      OUTFIT_SURFACE_CONFORMER: ${OUTFIT_SURFACE_CONFORMER:-}
+      OUTFIT_SURFACE_CONFORM_RATIO: ${OUTFIT_SURFACE_CONFORM_RATIO:-}
+      OUTFIT_SURFACE_CONFORM_EXPONENT: ${OUTFIT_SURFACE_CONFORM_EXPONENT:-}
+      OUTFIT_SURFACE_CONFORM_PIN_TOP_RATIO: ${OUTFIT_SURFACE_CONFORM_PIN_TOP_RATIO:-}
+      OUTFIT_SURFACE_SNAP: ${OUTFIT_SURFACE_SNAP:-}
+      OUTFIT_SURFACE_SNAP_GAP_RATIO: ${OUTFIT_SURFACE_SNAP_GAP_RATIO:-}
+      OUTFIT_ANCHOR_OFFSET_X: ${OUTFIT_ANCHOR_OFFSET_X:-}
+      OUTFIT_ANCHOR_OFFSET_Y: ${OUTFIT_ANCHOR_OFFSET_Y:-}
+      OUTFIT_ANCHOR_OFFSET_Z: ${OUTFIT_ANCHOR_OFFSET_Z:-}
+      OUTFIT_EXCLUDE_MATERIALS: ${OUTFIT_EXCLUDE_MATERIALS:-}
+      OUTFIT_ANCHOR: ${OUTFIT_ANCHOR:-}
+      OUTFIT_FIT_SCOPE: ${OUTFIT_FIT_SCOPE:-}
+      OUTFIT_GEOMETRY_CONDITIONER: ${OUTFIT_GEOMETRY_CONDITIONER:-}
+      EXPORT_BLEND: ${EXPORT_BLEND:-1}
+      EXPORT_GLB: ${EXPORT_GLB:-1}
+      RENDER_POSE_STILLS: ${RENDER_POSE_STILLS:-1}
+      RENDER_DIR: ${RENDER_DIR:-/workspace/outputs/pose_renders}
+      RENDER_ENGINE: ${RENDER_ENGINE:-BLENDER_WORKBENCH}
+      RENDER_ANGLES: ${RENDER_ANGLES:-front,side,three_quarter}
+      RENDER_POSE_FRAMES: ${RENDER_POSE_FRAMES:-}
+      RENDER_WIDTH: ${RENDER_WIDTH:-768}
+      RENDER_HEIGHT: ${RENDER_HEIGHT:-1152}
+      INPUT_MODEL: ${INPUT_MODEL:-/workspace/input/model.vrm}
+      ANIMATION_REPORT_JSON: ${ANIMATION_REPORT_JSON:-/workspace/results/animation_smoke.json}
+      OUTPUT_BLEND: ${OUTPUT_BLEND:-/workspace/outputs/animation_smoke.blend}
+      OUTPUT_GLB: ${OUTPUT_GLB:-/workspace/outputs/animation_smoke.glb}
+      OUTPUT_VRM: ${OUTPUT_VRM:-}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command:
+      - blender
+      - --background
+      - --python
+      - scripts/install_addons.py
+      - --python
+      - scripts/animate_smoke.py
+      - --
+      - ${INPUT_MODEL:-/workspace/input/model.vrm}
+      - ${ANIMATION_REPORT_JSON:-/workspace/results/animation_smoke.json}
+      - ${OUTPUT_BLEND:-/workspace/outputs/animation_smoke.blend}
+      - ${OUTPUT_GLB:-/workspace/outputs/animation_smoke.glb}
+    profiles: ["tools"]
+
+  blender-silhouette-fit:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      SILHOUETTE_OBJECT_NAME: ${SILHOUETTE_OBJECT_NAME:-}
+      SILHOUETTE_TARGET_MASK: ${SILHOUETTE_TARGET_MASK:-}
+      SILHOUETTE_REPORT_JSON: ${SILHOUETTE_REPORT_JSON:-/workspace/results/blender_silhouette_fit.json}
+      SILHOUETTE_OUTPUT_BLEND: ${SILHOUETTE_OUTPUT_BLEND:-}
+      SILHOUETTE_DEBUG_DIR: ${SILHOUETTE_DEBUG_DIR:-}
+      SILHOUETTE_WIDTH: ${SILHOUETTE_WIDTH:-256}
+      SILHOUETTE_HEIGHT: ${SILHOUETTE_HEIGHT:-256}
+      SILHOUETTE_POPULATION_SIZE: ${SILHOUETTE_POPULATION_SIZE:-32}
+      SILHOUETTE_GENERATIONS: ${SILHOUETTE_GENERATIONS:-24}
+      SILHOUETTE_SIGMA: ${SILHOUETTE_SIGMA:-0.25}
+      SILHOUETTE_SEED: ${SILHOUETTE_SEED:-13}
+      SILHOUETTE_SCALE_PRIOR_WEIGHT: ${SILHOUETTE_SCALE_PRIOR_WEIGHT:-0.35}
+      SILHOUETTE_AREA_PRIOR_WEIGHT: ${SILHOUETTE_AREA_PRIOR_WEIGHT:-0.5}
+      SILHOUETTE_EXPECTED_MIN_BBOX_ASPECT: ${SILHOUETTE_EXPECTED_MIN_BBOX_ASPECT:-}
+      SILHOUETTE_LOCK_SCALE_ON_SMALL_TARGET: ${SILHOUETTE_LOCK_SCALE_ON_SMALL_TARGET:-1}
+      SILHOUETTE_INITIAL_POSE: ${SILHOUETTE_INITIAL_POSE:-}
+      SILHOUETTE_LOWER_BOUNDS: ${SILHOUETTE_LOWER_BOUNDS:-}
+      SILHOUETTE_UPPER_BOUNDS: ${SILHOUETTE_UPPER_BOUNDS:-}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command:
+      - blender
+      - --background
+      - --python
+      - scripts/install_addons.py
+      - --python
+      - scripts/blender_silhouette_fit.py
+      - --
+      - --object-name
+      - ${SILHOUETTE_OBJECT_NAME:-target_object}
+      - --target-mask
+      - ${SILHOUETTE_TARGET_MASK:-/workspace/outputs/calibration/target_mask.png}
+      - --report-json
+      - ${SILHOUETTE_REPORT_JSON:-/workspace/results/blender_silhouette_fit.json}
+      - --scale-prior-weight
+      - ${SILHOUETTE_SCALE_PRIOR_WEIGHT:-0.35}
+      - --area-prior-weight
+      - ${SILHOUETTE_AREA_PRIOR_WEIGHT:-0.5}
+      - --lock-scale-on-small-target
+      - --width
+      - ${SILHOUETTE_WIDTH:-256}
+      - --height
+      - ${SILHOUETTE_HEIGHT:-256}
+      - --population-size
+      - ${SILHOUETTE_POPULATION_SIZE:-32}
+      - --generations
+      - ${SILHOUETTE_GENERATIONS:-24}
+      - --sigma
+      - ${SILHOUETTE_SIGMA:-0.25}
+      - --seed
+      - ${SILHOUETTE_SEED:-13}
+      - --apply
+    profiles: ["tools"]
+
+  shell:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      MATERIAL_AUDIT_JSON: ${MATERIAL_AUDIT_JSON:-/workspace/results/material_audit.json}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    entrypoint: ["/bin/bash"]
+    profiles: ["debug"]

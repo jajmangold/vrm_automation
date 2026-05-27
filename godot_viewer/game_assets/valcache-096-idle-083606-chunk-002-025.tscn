@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/valcache-096-idle-083606-chunk-002-025.glb" id="1_character"]
+
+[node name="valcache_096_idle_083606_chunk_002_025" instance=ExtResource("1_character")]
+metadata/id = "valcache-096-idle-083606-chunk-002-025"
+metadata/display_name = "Valcache 096 Idle 083606 Chunk 002 025 Female Bowtie Jeremy Talk Idle"
+metadata/persona = "host character who talks on command"
+metadata/tags = "generated,controllable,instant,base:female-hairsample,bowtie-jeremy,neck-chest,license:cc-by-3.0,attribution:required,quality:ship,creator:jeremy,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/cache/683aff4ae080c56e.face.json"
+metadata/lipsync_cue_count = 18
+metadata/lipsync_duration = 1.860
+metadata/lipsync_visemes = "rest,aa,ee,ih,oh,ou"
+metadata/lipsync_source = "phoneme-events"
+metadata/lipsync_source_event_count = 18
+metadata/lipsync_source_phoneme_count = 18
+metadata/lipsync_source_phonemes = "P,AE1,T,M,EH1,IH1,SIL,G,OW1,UH1,F,UW1,D"
+metadata/animation_report = "/workspace/results/batch/valcache-096-idle-083606-chunk-002-025_animation.json"

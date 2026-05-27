@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/std-130-male-pixel-glasses-ipoly3d-celebrate.glb" id="1_character"]
+
+[node name="std_130_male_pixel_glasses_ipoly3d_celebrate" instance=ExtResource("1_character")]
+metadata/id = "std-130-male-pixel-glasses-ipoly3d-celebrate"
+metadata/display_name = "Std Mina Celebrates"
+metadata/persona = "streamer character who celebrates on command"
+metadata/tags = "generated,controllable,base:male-hairsample,pixel-glasses-ipoly3d,head-face,license:cc0,attribution:not-required,quality:ship,creator:ipoly3d,celebrate,happy,face:happy,source:standard-anim5"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/std-130-male-pixel-glasses-ipoly3d-celebrate_animation.json"

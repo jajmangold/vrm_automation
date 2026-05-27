@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-pixel-rin-talk.glb" id="1_character"]
+
+[node name="ctrl_pixel_rin_talk" instance=ExtResource("1_character")]
+metadata/id = "ctrl-pixel-rin-talk"
+metadata/display_name = "Pixel Rin Talk"
+metadata/persona = "fast-talking streamer type"
+metadata/tags = "controllable,glasses,face,talk-idle,streamer,facial"

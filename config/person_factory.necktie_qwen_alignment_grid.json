@@ -1,0 +1,70 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "front,portrait",
+    "render_engine": "BLENDER_WORKBENCH",
+    "render_height": "960",
+    "render_pose_frames": "29",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "display_name": "Necktie Align L",
+      "facial_preset": "neutral",
+      "id": "necktie-qwen-align-left",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Fine alignment QA: lower placement with slight left offset.",
+      "outfit_fit_scope": "neck-chest",
+      "outfit_horizontal_center_offset_ratio": -0.01,
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necktie_jeremy.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.26,
+      "outfit_target_size_ratio": 0.16,
+      "outfit_vertical_center_ratio": 0.69,
+      "persona": "male necktie final alignment probe",
+      "tags": ["placement-probe", "necktie-jeremy", "alignment-grid"]
+    },
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "display_name": "Necktie Align C",
+      "facial_preset": "neutral",
+      "id": "necktie-qwen-align-center",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Fine alignment QA: lower placement centered.",
+      "outfit_fit_scope": "neck-chest",
+      "outfit_horizontal_center_offset_ratio": 0.0,
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necktie_jeremy.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.26,
+      "outfit_target_size_ratio": 0.16,
+      "outfit_vertical_center_ratio": 0.69,
+      "persona": "male necktie final alignment probe",
+      "tags": ["placement-probe", "necktie-jeremy", "alignment-grid"]
+    },
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "display_name": "Necktie Align R",
+      "facial_preset": "neutral",
+      "id": "necktie-qwen-align-right",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_male_cc0.vrm",
+      "notes": "Fine alignment QA: lower placement with slight right offset.",
+      "outfit_fit_scope": "neck-chest",
+      "outfit_horizontal_center_offset_ratio": 0.01,
+      "outfit_model": "/workspace/input/outfits/poly_pizza/necktie_jeremy.glb",
+      "outfit_scale_axis": "height",
+      "outfit_surface_offset_ratio": 0.26,
+      "outfit_target_size_ratio": 0.16,
+      "outfit_vertical_center_ratio": 0.69,
+      "persona": "male necktie final alignment probe",
+      "tags": ["placement-probe", "necktie-jeremy", "alignment-grid"]
+    }
+  ]
+}

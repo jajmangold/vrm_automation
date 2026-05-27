@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/gen-006-female-bag-talk-idle.glb" id="1_character"]
+
+[node name="gen_006_female_bag_talk_idle" instance=ExtResource("1_character")]
+metadata/id = "gen-006-female-bag-talk-idle"
+metadata/display_name = "Sora Talks"
+metadata/persona = "student character who talks on command"
+metadata/tags = "generated,controllable,base:female-hairsample,student,bag,full-body,talk-idle,dialogue,source:in-blender,source:sparse-next48"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/gen-006-female-bag-talk-idle_animation.json"

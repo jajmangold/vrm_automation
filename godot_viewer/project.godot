@@ -1,0 +1,13 @@
+config_version=5
+
+[application]
+config/name="VRM Person Factory Viewer"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.3")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

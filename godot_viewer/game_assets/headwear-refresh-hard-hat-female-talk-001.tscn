@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/headwear-refresh-hard-hat-female-talk-001.glb" id="1_character"]
+
+[node name="headwear_refresh_hard_hat_female_talk_001" instance=ExtResource("1_character")]
+metadata/id = "headwear-refresh-hard-hat-female-talk-001"
+metadata/display_name = "Hard Hat Host"
+metadata/persona = "female builder host who talks on command"
+metadata/tags = "generated,controllable,headwear-refresh,hard-hat-google,head-face,dialogue,base:female-hairsample,quality:review,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,source:headwear-refresh"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/headwear-refresh-hard-hat-female-talk-001_animation.json"

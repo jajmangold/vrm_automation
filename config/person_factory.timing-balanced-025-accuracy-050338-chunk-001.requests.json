@@ -1,0 +1,147 @@
+{
+  "requests": [
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-001",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 001 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-002",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 002 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-003",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 003 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-004",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 004 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-005",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 005 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-006",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 006 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-007",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 007 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-008",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 008 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-009",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 009 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-010",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 010 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-011",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 011 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-012",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 012 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    },
+    {
+      "id": "timing-balanced-025-accuracy-050338-chunk-001-013",
+      "name": "Timing Balanced 025 Accuracy 050338 Chunk 001 013 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Cached hello.",
+      "audio_cache_key": "c1762949f34324e0",
+      "lipsync_timeline": "outputs/lipsync/cache/c1762949f34324e0.face.json"
+    }
+  ]
+}

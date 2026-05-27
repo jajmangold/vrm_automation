@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/lip-phoneme-001-pixel-talk.glb" id="1_character"]
+
+[node name="lip_phoneme_001_pixel_talk" instance=ExtResource("1_character")]
+metadata/id = "lip-phoneme-001-pixel-talk"
+metadata/display_name = "Phoneme Pixel Talk"
+metadata/persona = "streamer character who talks on command"
+metadata/tags = "generated,controllable,instant,base:male-hairsample,pixel-glasses-ipoly3d,head-face,license:cc0,attribution:not-required,quality:ship,creator:ipoly3d,talk-idle,dialogue,face:talking-soft,lip-sync,vrm-visemes"
+metadata/lipsync_timeline = "/workspace/outputs/lipsync/hello_phonemes.face.json"
+metadata/lipsync_cue_count = 18
+metadata/lipsync_duration = 1.860
+metadata/lipsync_visemes = "rest,ee,oh,ou,aa"
+metadata/lipsync_source = "phoneme-events"
+metadata/lipsync_source_event_count = 18
+metadata/lipsync_source_phoneme_count = 18
+metadata/lipsync_source_phonemes = "HH,EH1,L,OW1,W,ER1,D,SIL,AY1,K,AE1,N,T,AO1,AW1"
+metadata/animation_report = "/workspace/results/batch/lip-phoneme-001-pixel-talk_animation.json"

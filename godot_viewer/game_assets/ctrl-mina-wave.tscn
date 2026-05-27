@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-mina-wave.glb" id="1_character"]
+
+[node name="ctrl_mina_wave" instance=ExtResource("1_character")]
+metadata/id = "ctrl-mina-wave"
+metadata/display_name = "Mina Wave"
+metadata/persona = "warming up with a friendly wave"
+metadata/tags = "controllable,student,bag,wave,friendly,full-body"

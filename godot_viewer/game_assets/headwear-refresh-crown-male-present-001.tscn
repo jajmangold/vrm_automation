@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/headwear-refresh-crown-male-present-001.glb" id="1_character"]
+
+[node name="headwear_refresh_crown_male_present_001" instance=ExtResource("1_character")]
+metadata/id = "headwear-refresh-crown-male-present-001"
+metadata/display_name = "Crown Presenter"
+metadata/persona = "male royal presenter who explains on command"
+metadata/tags = "generated,controllable,headwear-refresh,crown-quaternius,head-face,presenter,base:male-hairsample,quality:review,calibration:image-guided-anchor,anchor:head-face-hat-top,anchor-validation:ok,source:headwear-refresh"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/headwear-refresh-crown-male-present-001_animation.json"

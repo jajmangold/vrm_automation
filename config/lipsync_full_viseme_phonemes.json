@@ -1,0 +1,27 @@
+{
+  "schema": "vrm-person-factory.phoneme-events.v1",
+  "source": {
+    "mode": "manual-arpabet",
+    "text": "Pat met Tim. Go put food."
+  },
+  "phonemes": [
+    {"time": 0.0, "duration": 0.06, "phoneme": "P"},
+    {"time": 0.06, "duration": 0.14, "phoneme": "AE1"},
+    {"time": 0.2, "duration": 0.08, "phoneme": "T"},
+    {"time": 0.28, "duration": 0.08, "phoneme": "M"},
+    {"time": 0.36, "duration": 0.14, "phoneme": "EH1"},
+    {"time": 0.5, "duration": 0.08, "phoneme": "T"},
+    {"time": 0.58, "duration": 0.08, "phoneme": "T"},
+    {"time": 0.66, "duration": 0.14, "phoneme": "IH1"},
+    {"time": 0.8, "duration": 0.08, "phoneme": "M"},
+    {"time": 0.88, "duration": 0.12, "phoneme": "SIL"},
+    {"time": 1.0, "duration": 0.08, "phoneme": "G"},
+    {"time": 1.08, "duration": 0.16, "phoneme": "OW1"},
+    {"time": 1.24, "duration": 0.08, "phoneme": "P"},
+    {"time": 1.32, "duration": 0.14, "phoneme": "UH1"},
+    {"time": 1.46, "duration": 0.08, "phoneme": "T"},
+    {"time": 1.54, "duration": 0.08, "phoneme": "F"},
+    {"time": 1.62, "duration": 0.16, "phoneme": "UW1"},
+    {"time": 1.78, "duration": 0.08, "phoneme": "D"}
+  ]
+}

@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/gen-057-female-necktie-jeremy-look-around.glb" id="1_character"]
+
+[node name="gen_057_female_necktie_jeremy_look_around" instance=ExtResource("1_character")]
+metadata/id = "gen-057-female-necktie-jeremy-look-around"
+metadata/display_name = "Lio Scans"
+metadata/persona = "presenter character who scans on command"
+metadata/tags = "generated,controllable,base:female-hairsample,necktie-jeremy,neck-chest,license:cc-by-3.0,attribution:required,creator:jeremy,look-around,ambient,source:next24,quality:ship,calibration:image-guided-anchor,anchor:neck-chest-collar-center,anchor-validation:ok,source:sparse-next80"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/gen-057-female-necktie-jeremy-look-around_animation.json"

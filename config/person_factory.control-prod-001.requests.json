@@ -1,0 +1,136 @@
+{
+  "requests": [
+    {
+      "id": "control-prod-001-001",
+      "name": "Control Prod 001 001 Female Aviator Sunglasses Google Talk Idle",
+      "base": "female",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-002",
+      "name": "Control Prod 001 002 Female Pirate Hat Google Present Explain",
+      "base": "female",
+      "accessory": "pirate-hat-google",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-003",
+      "name": "Control Prod 001 003 Female Necktie Jeremy Listening Nod",
+      "base": "female",
+      "accessory": "necktie-jeremy",
+      "animation": "listening_nod",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-004",
+      "name": "Control Prod 001 004 Female Cowboy Hat Google Confident Point",
+      "base": "female",
+      "accessory": "cowboy-hat-google",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-005",
+      "name": "Control Prod 001 005 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-006",
+      "name": "Control Prod 001 006 Female Necklace Quaternius Present Explain",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-007",
+      "name": "Control Prod 001 007 Male Aviator Sunglasses Google Listening Nod",
+      "base": "male",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "listening_nod",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-008",
+      "name": "Control Prod 001 008 Male Pirate Hat Google Confident Point",
+      "base": "male",
+      "accessory": "pirate-hat-google",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-009",
+      "name": "Control Prod 001 009 Male Necktie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "necktie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-010",
+      "name": "Control Prod 001 010 Male Cowboy Hat Google Present Explain",
+      "base": "male",
+      "accessory": "cowboy-hat-google",
+      "animation": "present_explain",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-011",
+      "name": "Control Prod 001 011 Male Bowtie Jeremy Listening Nod",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "listening_nod",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    },
+    {
+      "id": "control-prod-001-012",
+      "name": "Control Prod 001 012 Male Necklace Quaternius Confident Point",
+      "base": "male",
+      "accessory": "necklace-quaternius",
+      "animation": "confident_point",
+      "render_profile": "control_lipsync",
+      "text": "Control-ready production character with cached lip sync for immediate game and browser review.",
+      "audio_cache_key": "284e7c965239a326",
+      "lipsync_timeline": "outputs/lipsync/cache/284e7c965239a326.face.json"
+    }
+  ]
+}

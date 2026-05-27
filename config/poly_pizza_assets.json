@@ -1,0 +1,785 @@
+{
+  "assets": [
+    {
+      "id": "poly-pizza-backpack-quaternius",
+      "title": "Backpack",
+      "creator": "Quaternius",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/vF7TuXCPDH",
+      "expected_public_id": "vF7TuXCPDH",
+      "category": "torso_back",
+      "role": "scout",
+      "output_path": "input/outfits/poly_pizza/backpack_quaternius.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after clamped torso-back probe produced usable back-view placement on female and male bases; coarse bounds still require visual QA for bulky packs."
+        ]
+      },
+      "fit_overrides": {
+        "fit_scope": "torso",
+        "scale_axis": "height",
+        "target_size_ratio": 0.32,
+        "vertical_center_ratio": 0.6143,
+        "surface_offset_ratio": 0.34
+      },
+      "anchor_calibration": {
+        "source": "results/batch_torso_back_clamped_probe_latest.json",
+        "method": "sam31-profile-suggestion-clamped-torso-back-validation",
+        "anchor_name": "torso_back:back_center",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.5,
+          "width": 0.34,
+          "height": 0.34
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_torso_back_clamped_probe_latest.json",
+          "renders": [
+            "outputs/batch/torso-back-clamped-003_pose_renders/pose_back_0072.png",
+            "outputs/batch/torso-back-clamped-004_pose_renders/pose_back_0072.png"
+          ],
+          "jobs": [
+            "torso-back-clamped-003",
+            "torso-back-clamped-004"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-bag-quaternius",
+      "title": "Bag",
+      "creator": "Quaternius",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/Wq1JPPqHZS",
+      "expected_public_id": "Wq1JPPqHZS",
+      "category": "torso_back",
+      "role": "student",
+      "output_path": "input/outfits/poly_pizza/bag_quaternius.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Category-aware back-view QA 2026-05-25: remains too wide/blocky after torso-back size clamp; exclude from default person factory until replaced or manually remodeled."
+        ]
+      }
+    },
+    {
+      "id": "poly-pizza-necklace-quaternius",
+      "title": "Necklace",
+      "creator": "Quaternius",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/Mezewzksj5",
+      "expected_public_id": "Mezewzksj5",
+      "category": "neck_chest",
+      "role": "host",
+      "output_path": "input/outfits/poly_pizza/necklace_quaternius.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after high/forward neck-loop probe scored A/ship on female and male bases; depth warnings are benign for this loop geometry after visual QA."
+        ]
+      },
+      "fit_overrides": {
+        "fit_scope": "neck-chest",
+        "scale_axis": "height",
+        "target_size_ratio": 0.1538,
+        "vertical_center_ratio": 0.84,
+        "surface_offset_ratio": 0.34
+      },
+      "anchor_calibration": {
+        "source": "results/batch_necklace_forward_probe_latest.json",
+        "method": "sam31-profile-suggestion-forward-neck-loop-validation",
+        "anchor_name": "neck_chest:neck_loop",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.5,
+          "width": 0.34,
+          "height": 0.2
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_necklace_forward_probe_latest.json",
+          "renders": [
+            "outputs/batch/necklace-forward-001_pose_renders/pose_portrait_0072.png",
+            "outputs/batch/necklace-forward-002_pose_renders/pose_portrait_0072.png"
+          ],
+          "jobs": [
+            "necklace-forward-001",
+            "necklace-forward-002"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-pixel-glasses-ipoly3d",
+      "title": "Pixel Glasses",
+      "creator": "iPoly3D",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/VQuqLwtyTa",
+      "expected_public_id": "VQuqLwtyTa",
+      "category": "head_face",
+      "role": "streamer",
+      "output_path": "input/outfits/poly_pizza/pixel_glasses_ipoly3d.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "SAM anchor suggestion requires extreme size/vertical correction and clamps at target_size_ratio=0.6; reject from default pool until a better glasses asset is available."
+        ]
+      }
+    },
+    {
+      "id": "poly-pizza-glasses-jeremy",
+      "title": "Glasses",
+      "creator": "jeremy",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/9i5mmOwt7cu",
+      "expected_public_id": "9i5mmOwt7cu",
+      "category": "head_face",
+      "role": "analyst",
+      "fit_overrides": {
+        "scale_axis": "width",
+        "target_size_ratio": 0.1472,
+        "vertical_center_ratio": 0.9032,
+        "surface_offset_ratio": 0.18,
+        "fit_scope": "head-face"
+      },
+      "anchor_calibration": {
+        "source": "results/accessory_anchor_fit_suggestions_latest.json",
+        "method": "sam31-profile-suggestion-no-horizontal",
+        "anchor_name": "head_face:eye_line",
+        "coordinate_space": "character_render_box_ratio",
+        "target_center_ratio": {
+          "x": 0.5,
+          "y": 0.43
+        },
+        "target_size_ratio": {
+          "width": 0.42,
+          "height": 0.16
+        },
+        "validation": {
+          "status": "review",
+          "minimum_views": 4,
+          "view_count": 4,
+          "ok_view_count": 2,
+          "warnings": [
+            "male-fit-still-heavy",
+            "needs-second-iteration"
+          ],
+          "reports": [
+            "results/batch_glasses_anchor_validation_latest.json"
+          ],
+          "notes": [
+            "No-horizontal measured fit is materially better than raw placement, but male portrait remains large/low; keep as review calibration, not ship."
+          ]
+        }
+      },
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Male portrait QA showed raw glasses were large/low.",
+          "SAM/profile no-horizontal fit 2026-05-25 improved scale and centering, but male/female validation still needs another pass before ship.",
+          "Anchor candidate probe 2026-05-25 still reads high/poor compared with aviator sunglasses; reject from default pool."
+        ]
+      },
+      "output_path": "input/outfits/poly_pizza/glasses_jeremy.glb"
+    },
+    {
+      "id": "poly-pizza-aviator-sunglasses-google",
+      "title": "Aviator sunglasses",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/0Wsi-ygmiIX",
+      "expected_public_id": "0Wsi-ygmiIX",
+      "category": "head_face",
+      "role": "pilot",
+      "fit_overrides": {
+        "scale_axis": "width",
+        "target_size_ratio": 0.1495,
+        "vertical_center_ratio": 0.9053,
+        "surface_offset_ratio": 0.18,
+        "fit_scope": "head-face"
+      },
+      "anchor_calibration": {
+        "source": "results/accessory_anchor_fit_suggestions_batch_latest.json",
+        "method": "sam31-profile-suggestion-multibase-validation",
+        "anchor_name": "head_face:eye_line",
+        "coordinate_space": "character_render_box_ratio",
+        "target_center_ratio": {
+          "x": 0.5,
+          "y": 0.43
+        },
+        "target_size_ratio": {
+          "width": 0.42,
+          "height": 0.16
+        },
+        "validation": {
+          "status": "ok",
+          "minimum_views": 2,
+          "view_count": 2,
+          "ok_view_count": 2,
+          "warnings": [],
+          "reports": [
+            "results/batch_aviator_anchor_validation_latest.json",
+            "results/finalize_aviator_anchor_validation_latest.json"
+          ],
+          "renders": [
+            "outputs/batch/anchor-validate-aviator-sam-001-001_pose_renders/pose_portrait_0072.png",
+            "outputs/batch/anchor-validate-aviator-sam-001-002_pose_renders/pose_portrait_0072.png"
+          ],
+          "notes": [
+            "Female and male validation probes scored A/ship after SAM-measured fit override; visual QA acceptable, with male frame slightly large but usable."
+          ]
+        }
+      },
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "SAM batch measurement 2026-05-25 found raw aviators oversized/low; deterministic fit override target_size_ratio=0.1495, vertical_center_ratio=0.9053 improved female and male portrait frames.",
+          "Promoted after two-base validation results/batch_aviator_anchor_validation_latest.json: both probes A/ship and served in person_factory_aviator_anchor_validation.html."
+        ]
+      },
+      "output_path": "input/outfits/poly_pizza/aviator_sunglasses_google.glb"
+    },
+    {
+      "id": "poly-pizza-heart-glasses-j-toastie",
+      "title": "Heart Glasses",
+      "creator": "J-Toastie",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/6B6ijFF01X",
+      "expected_public_id": "6B6ijFF01X",
+      "category": "head_face",
+      "role": "performer",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Auto-lip-002 PNG QA showed this mesh renders as an oversized magenta bar/half-frame across the forehead/eyes. A smaller placement probe improved scale but still was not ship quality; reject until the model is replaced or custom-calibrated."
+        ]
+      },
+      "output_path": "input/outfits/poly_pizza/heart_glasses_j_toastie.glb"
+    },
+    {
+      "id": "poly-pizza-pirate-hat-google",
+      "title": "Pirate hat",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/9QEds6cYAy6",
+      "expected_public_id": "9QEds6cYAy6",
+      "category": "head_face",
+      "role": "captain",
+      "output_path": "input/outfits/poly_pizza/pirate_hat_google.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after category-aware anchor review probe scored A/ship on female and male bases and portrait PNG QA passed."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.1113,
+        "vertical_center_ratio": 0.9578,
+        "surface_offset_ratio": 0.045,
+        "anchor_z_percentile": 0.32,
+        "anchor_offset": [
+          0.0,
+          0.0,
+          -0.035
+        ]
+      },
+      "anchor_calibration": {
+        "source": "results/accessory_anchor_fit_suggestions_all_latest.json",
+        "method": "sam31-profile-suggestion-category-aware-validation",
+        "anchor_name": "head_face:hat_top",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.16,
+          "width": 0.45,
+          "height": 0.24
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_anchor_review_category_probe_latest.json",
+          "renders": [
+            "outputs/batch/anchor-review-category-011_pose_renders/pose_portrait_0072.png",
+            "outputs/batch/anchor-review-category-012_pose_renders/pose_portrait_0072.png"
+          ],
+          "jobs": [
+            "anchor-review-category-011",
+            "anchor-review-category-012"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-cowboy-hat-google",
+      "title": "Cowboy hat",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/aWzUlZtGLC0",
+      "expected_public_id": "aWzUlZtGLC0",
+      "category": "head_face",
+      "role": "ranger",
+      "output_path": "input/outfits/poly_pizza/cowboy_hat_google.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after SAM/Qwen anchor measurement, two-base candidate probe, and visual PNG QA passed for female and male portrait renders."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.058,
+        "vertical_center_ratio": 0.9638,
+        "surface_offset_ratio": 0.045
+      },
+      "anchor_calibration": {
+        "source": "results/accessory_anchor_fit_suggestions_all_latest.json",
+        "method": "sam31-profile-suggestion-multibase-validation",
+        "anchor_name": "head_face:hat_top",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.16,
+          "width": 0.45,
+          "height": 0.24
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_anchor_candidate_next_latest.json",
+          "renders": [
+            "outputs/batch/anchor-candidate-next-001-001_pose_renders/pose_portrait_0072.png",
+            "outputs/batch/anchor-candidate-next-001-002_pose_renders/pose_portrait_0072.png"
+          ],
+          "jobs": [
+            "anchor-candidate-next-001-001",
+            "anchor-candidate-next-001-002"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-wizard-hat-google",
+      "title": "Wizard hat",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/7VVumyY7L_u",
+      "expected_public_id": "7VVumyY7L_u",
+      "category": "head_face",
+      "role": "mage",
+      "output_path": "input/outfits/poly_pizza/wizard_hat_google.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Portrait QA 2026-05-25: hat reads too small and hidden by hair on female/male bases after SAM suggestion; reject until custom scale/hair-aware fit is available."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.105,
+        "vertical_center_ratio": 0.94,
+        "surface_offset_ratio": 0.045
+      }
+    },
+    {
+      "id": "poly-pizza-fedora-google",
+      "title": "Fedora",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/8TpZrCG3aRf",
+      "expected_public_id": "8TpZrCG3aRf",
+      "category": "head_face",
+      "role": "reporter",
+      "output_path": "input/outfits/poly_pizza/fedora_google.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Portrait QA shows this asset is visibly blocky and sits low over the face after automatic fitting."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.085,
+        "vertical_center_ratio": 0.925,
+        "surface_offset_ratio": 0.045
+      }
+    },
+    {
+      "id": "poly-pizza-crown-quaternius",
+      "title": "Crown",
+      "creator": "Quaternius",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/i0PZVuVlYv",
+      "expected_public_id": "i0PZVuVlYv",
+      "category": "head_face",
+      "role": "royal",
+      "output_path": "input/outfits/poly_pizza/crown_quaternius.glb",
+      "quality": {
+        "status": "review",
+        "notes": [
+          "Multi-base PNG QA passed after reducing scale and lowering the hat-top vertical fit. Keep as review until broader production batches confirm it."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.1,
+        "vertical_center_ratio": 0.955,
+        "surface_offset_ratio": 0.045
+      },
+      "anchor_calibration": {
+        "source": "results/batch_crown_multibase_fit_probe_latest.json",
+        "method": "multibase-lower-headwear-fit-probe",
+        "anchor_name": "head_face:hat_top",
+        "validation": {
+          "status": "ok",
+          "reports": [
+            "results/batch/anchor-probe-crown-quaternius-female-vertical-001_animation.json",
+            "results/batch/anchor-probe-crown-quaternius-male-vertical-001_animation.json"
+          ],
+          "renders": [
+            "outputs/batch/anchor-probe-crown-quaternius-female-vertical-001_pose_renders/pose_portrait_0024.png",
+            "outputs/batch/anchor-probe-crown-quaternius-male-vertical-001_pose_renders/pose_portrait_0024.png"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-hard-hat-google",
+      "title": "Hard hat",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/9AMKar2NlkX",
+      "expected_public_id": "9AMKar2NlkX",
+      "category": "head_face",
+      "role": "builder",
+      "output_path": "input/outfits/poly_pizza/hard_hat_google.glb",
+      "quality": {
+        "status": "review",
+        "notes": [
+          "Multi-base PNG QA passed after adding catalog yaw rotation. Keep as review until broader production batches confirm it."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.085,
+        "vertical_center_ratio": 0.925,
+        "surface_offset_ratio": 0.045,
+        "rotation_z_degrees": 90,
+        "exclude_materials": [
+          "02___Default"
+        ]
+      },
+      "anchor_calibration": {
+        "source": "results/batch_headwear_multibase_validation_latest.json",
+        "method": "multibase-catalog-yaw-rotation-probe",
+        "anchor_name": "head_face:hat_top",
+        "validation": {
+          "status": "ok",
+          "reports": [
+            "results/batch/anchor-validate-hard-hat-google-female-001_animation.json",
+            "results/batch/anchor-validate-hard-hat-google-male-001_animation.json"
+          ],
+          "renders": [
+            "outputs/batch/anchor-validate-hard-hat-google-female-001_pose_renders/pose_portrait_0024.png",
+            "outputs/batch/anchor-validate-hard-hat-google-male-001_pose_renders/pose_portrait_0024.png"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-monocle-google",
+      "title": "Monocle",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/3enxGxYxEKF",
+      "expected_public_id": "3enxGxYxEKF",
+      "category": "head_face",
+      "role": "curator",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Portrait QA places the monocle on the forehead rather than the eye; reject until anchor placement is improved."
+        ]
+      },
+      "fit_overrides": {
+        "scale_axis": "height",
+        "target_size_ratio": 0.055,
+        "vertical_center_ratio": 0.89
+      },
+      "output_path": "input/outfits/poly_pizza/monocle_google.glb"
+    },
+    {
+      "id": "poly-pizza-anon-mask-scott-marshall",
+      "title": "SM - Anon Mask",
+      "creator": "Scott Marshall",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/2_N0mh67_Xu",
+      "expected_public_id": "2_N0mh67_Xu",
+      "category": "head_face",
+      "role": "mystery",
+      "output_path": "input/outfits/poly_pizza/anon_mask_scott_marshall.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Portrait QA 2026-05-25: mask placement works geometrically but fully occludes identity and facial expressions; reject from speaking/person default pool."
+        ]
+      }
+    },
+    {
+      "id": "poly-pizza-football-helmet-google",
+      "title": "Football helmet",
+      "creator": "Poly by Google",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/dCmNk08B6gs",
+      "expected_public_id": "dCmNk08B6gs",
+      "category": "head_face",
+      "role": "athlete",
+      "output_path": "input/outfits/poly_pizza/football_helmet_google.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "SAM suggestion requires near-clamped vertical placement and extreme shrink; category-aware probe remains C/fix. Reject from default pool until replaced or manually fitted."
+        ]
+      },
+      "fit_overrides": {
+        "anchor": "hat_top",
+        "fit_scope": "headwear",
+        "scale_axis": "height",
+        "target_size_ratio": 0.13,
+        "vertical_center_ratio": 0.965,
+        "surface_offset_ratio": 0.045
+      }
+    },
+    {
+      "id": "poly-pizza-necktie-jeremy",
+      "title": "Necktie",
+      "creator": "jeremy",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/5HsEWuyPjik",
+      "expected_public_id": "5HsEWuyPjik",
+      "category": "neck_chest",
+      "role": "presenter",
+      "output_path": "input/outfits/poly_pizza/necktie_jeremy.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after clamped collar probe moved the tie from face placement to collar/chest placement and scored A/ship on female and male bases."
+        ]
+      },
+      "fit_overrides": {
+        "fit_scope": "neck-chest",
+        "scale_axis": "height",
+        "target_size_ratio": 0.082,
+        "vertical_center_ratio": 0.74,
+        "surface_offset_ratio": 0.26
+      },
+      "anchor_calibration": {
+        "source": "results/batch_necktie_low_probe_latest.json",
+        "method": "sam31-profile-suggestion-clamped-collar-validation",
+        "anchor_name": "neck_chest:collar_center",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.41,
+          "width": 0.2,
+          "height": 0.1
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_necktie_low_probe_latest.json",
+          "renders": [
+            "outputs/batch/necktie-low-001_pose_renders/pose_portrait_0072.png",
+            "outputs/batch/necktie-low-002_pose_renders/pose_portrait_0072.png"
+          ],
+          "jobs": [
+            "necktie-low-001",
+            "necktie-low-002"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-bowtie-jeremy",
+      "title": "Bowtie",
+      "creator": "jeremy",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "expected_public_id": "fQGdyazJ-2m",
+      "category": "neck_chest",
+      "fit_overrides": {
+        "fit_scope": "neck-chest",
+      "scale_axis": "width",
+      "target_size_ratio": 0.082,
+      "vertical_center_ratio": 0.805,
+      "horizontal_center_offset_ratio": -0.0022,
+      "surface_snap": "surface-gap",
+      "surface_snap_gap_ratio": -0.19
+    },
+      "anchor_calibration": {
+        "source": "outputs/calibration/bowtie_anchor_calibration_applied_iter3_damped.json",
+        "method": "qwen-image-edit-2509+sam31-iterative-damped",
+        "anchor_name": "neck_chest:collar_center",
+        "coordinate_space": "character_render_box_ratio",
+        "target_center_ratio": {
+          "x": 0.461,
+          "y": 0.4057
+        },
+        "target_size_ratio": {
+          "width": 0.1961,
+          "height": 0.0998
+        },
+        "correction_delta_ratio": {
+          "x": 0.0069,
+          "y": -0.1419
+        },
+        "validation": {
+          "status": "ok",
+          "minimum_views": 4,
+          "view_count": 4,
+          "ok_view_count": 4,
+          "warnings": [],
+          "reports": [
+            "outputs/calibration/bowtie_anchor_validation_applied_iter3_damped.json",
+            "outputs/calibration/bowtie_rerender_anchor_validation.json"
+          ],
+          "notes": [
+            "4-view SAM/red-fallback validation passed after rerender; promote anchor for batch use."
+          ],
+          "previous_status": "review",
+          "previous_reports": [
+            "outputs/calibration/bowtie_anchor_validation_applied_iter3_damped.json"
+          ],
+          "previous_notes": [
+            "Damped Qwen/SAM iteration matches the edited target in portrait-0009 within tolerance.",
+            "Needs a second validated view before promoting from review."
+          ]
+        }
+      },
+  "quality": {
+    "status": "review",
+    "notes": [
+      "visual QA 2026-05-25: initially split into oversized side blocks when fit to VRoid neck/chest",
+      "SAM/Qwen calibration 2026-05-25: Qwen Image Edit target plus SAM/red-mask bboxes produced deterministic override target_size_ratio=0.0972, vertical_center_ratio=0.7998; rerender looks usable but bounds still flag outfit-height-very-small, so keep as review",
+      "Damped SAM/Qwen iteration 2026-05-25: target_size_ratio=0.0975, vertical_center_ratio=0.8304, horizontal_center_offset_ratio=-0.0022; portrait validation passed, multi-view validation still required",
+      "Promoted to ship 2026-05-25 after 4-view anchor validation, visual PNG QA, neck-chest tiny-accessory fit-check refinement, and auto-bowtie-anchor-002 fast-path proof graded A/ship.",
+      "Demoted to review 2026-05-26 after web-thumb-variety-384-001 visual PNG QA showed the bowtie still rendering as separated chest pieces in portrait."
+    ]
+  },
+      "role": "host",
+      "output_path": "input/outfits/poly_pizza/bowtie_jeremy.glb"
+    },
+    {
+      "id": "poly-pizza-backpack-j-toastie",
+      "title": "Backpack",
+      "creator": "J-Toastie",
+      "license": "Creative Commons Attribution 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution_required": true,
+      "source_url": "https://poly.pizza/m/uRRsiIZKHG",
+      "expected_public_id": "uRRsiIZKHG",
+      "category": "torso_back",
+      "role": "traveler",
+      "output_path": "input/outfits/poly_pizza/backpack_j_toastie.glb",
+      "quality": {
+        "status": "ship",
+        "notes": [
+          "Promoted 2026-05-25 after clamped torso-back probe produced usable back-view placement on female and male bases."
+        ]
+      },
+      "fit_overrides": {
+        "fit_scope": "torso",
+        "scale_axis": "height",
+        "target_size_ratio": 0.32,
+        "vertical_center_ratio": 0.6151,
+        "surface_offset_ratio": 0.34
+      },
+      "anchor_calibration": {
+        "source": "results/batch_torso_back_clamped_probe_latest.json",
+        "method": "sam31-profile-suggestion-clamped-torso-back-validation",
+        "anchor_name": "torso_back:back_center",
+        "target_profile": {
+          "center_x": 0.5,
+          "center_y": 0.5,
+          "width": 0.34,
+          "height": 0.34
+        },
+        "validation": {
+          "status": "ok",
+          "batch_result": "results/batch_torso_back_clamped_probe_latest.json",
+          "renders": [
+            "outputs/batch/torso-back-clamped-001_pose_renders/pose_back_0072.png",
+            "outputs/batch/torso-back-clamped-002_pose_renders/pose_back_0072.png"
+          ],
+          "jobs": [
+            "torso-back-clamped-001",
+            "torso-back-clamped-002"
+          ]
+        }
+      }
+    },
+    {
+      "id": "poly-pizza-backpack-quaternius-alt",
+      "title": "Backpack",
+      "creator": "Quaternius",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution_required": false,
+      "source_url": "https://poly.pizza/m/2g9Jm7kvIU",
+      "expected_public_id": "2g9Jm7kvIU",
+      "category": "torso_back",
+      "role": "explorer",
+      "output_path": "input/outfits/poly_pizza/backpack_quaternius_alt.glb",
+      "quality": {
+        "status": "reject",
+        "notes": [
+          "Back-view QA 2026-05-25: clamped torso-back probe has a wide shelf-like top panel across the shoulders on female and male bases; reject from default pool."
+        ]
+      }
+    }
+  ]
+}

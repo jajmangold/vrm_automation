@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/anchor-candidate-sam-001-002.glb" id="1_character"]
+
+[node name="anchor_candidate_sam_001_002" instance=ExtResource("1_character")]
+metadata/id = "anchor-candidate-sam-001-002"
+metadata/display_name = "Anchor Candidate Aviator sunglasses Female"
+metadata/persona = "female accessory fit candidate for aviator-sunglasses-google"
+metadata/tags = "generated,anchor-candidate,aviator-sunglasses-google,head-face,base:female-hairsample,source:anchor-fit-suggestion,quality:ship,calibration:image-guided-anchor,anchor:head-face-eye-line,anchor-validation:ok,source:anchor-candidate-probe"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/anchor-candidate-sam-001-002_animation.json"

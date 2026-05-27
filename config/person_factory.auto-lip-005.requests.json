@@ -1,0 +1,136 @@
+{
+  "requests": [
+    {
+      "id": "auto-lip-005-001",
+      "name": "Auto Lip 005 001 Female Aviator Sunglasses Google Talk Idle",
+      "base": "female",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "talk_idle",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-002",
+      "name": "Auto Lip 005 002 Female Pirate Hat Google Present Explain",
+      "base": "female",
+      "accessory": "pirate-hat-google",
+      "animation": "present_explain",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-003",
+      "name": "Auto Lip 005 003 Female Necktie Jeremy Listening Nod",
+      "base": "female",
+      "accessory": "necktie-jeremy",
+      "animation": "listening_nod",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-004",
+      "name": "Auto Lip 005 004 Female Cowboy Hat Google Confident Point",
+      "base": "female",
+      "accessory": "cowboy-hat-google",
+      "animation": "confident_point",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-005",
+      "name": "Auto Lip 005 005 Female Bowtie Jeremy Talk Idle",
+      "base": "female",
+      "accessory": "bowtie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-006",
+      "name": "Auto Lip 005 006 Female Necklace Quaternius Present Explain",
+      "base": "female",
+      "accessory": "necklace-quaternius",
+      "animation": "present_explain",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-007",
+      "name": "Auto Lip 005 007 Male Aviator Sunglasses Google Listening Nod",
+      "base": "male",
+      "accessory": "aviator-sunglasses-google",
+      "animation": "listening_nod",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-008",
+      "name": "Auto Lip 005 008 Male Pirate Hat Google Confident Point",
+      "base": "male",
+      "accessory": "pirate-hat-google",
+      "animation": "confident_point",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-009",
+      "name": "Auto Lip 005 009 Male Necktie Jeremy Talk Idle",
+      "base": "male",
+      "accessory": "necktie-jeremy",
+      "animation": "talk_idle",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-010",
+      "name": "Auto Lip 005 010 Male Cowboy Hat Google Present Explain",
+      "base": "male",
+      "accessory": "cowboy-hat-google",
+      "animation": "present_explain",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-011",
+      "name": "Auto Lip 005 011 Male Bowtie Jeremy Listening Nod",
+      "base": "male",
+      "accessory": "bowtie-jeremy",
+      "animation": "listening_nod",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    },
+    {
+      "id": "auto-lip-005-012",
+      "name": "Auto Lip 005 012 Male Necklace Quaternius Confident Point",
+      "base": "male",
+      "accessory": "necklace-quaternius",
+      "animation": "confident_point",
+      "render_profile": "fast_lipsync",
+      "text": "Warm cache first, then render characters in moments.",
+      "audio_cache_key": "9009d55aaeee4e89",
+      "lipsync_timeline": "outputs/lipsync/cache/9009d55aaeee4e89.face.json"
+    }
+  ]
+}

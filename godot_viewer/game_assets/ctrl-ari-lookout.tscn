@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-ari-lookout.glb" id="1_character"]
+
+[node name="ctrl_ari_lookout" instance=ExtResource("1_character")]
+metadata/id = "ctrl-ari-lookout"
+metadata/display_name = "Ari Lookout"
+metadata/persona = "curious trail scout"
+metadata/tags = "controllable,travel,backpack,look-around,ambient,full-body"

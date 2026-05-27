@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://vrm_person_factory_main"]
+
+[ext_resource type="Script" path="res://scripts/control_api.gd" id="1_control_api"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_control_api")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="KeyLight" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.25, 0.433013, 0, 0.866025, 0.5, -0.5, -0.433013, 0.75, 0, 3, 4)
+light_energy = 2.5
+
+[node name="FillLight" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 2, 2.5)
+light_energy = 1.0
+omni_range = 6.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 1.45, 4.6)
+current = true
+fov = 32.0

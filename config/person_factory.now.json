@@ -1,0 +1,54 @@
+{
+  "defaults": {
+    "cache_base_scenes": "1",
+    "export_blend": "0",
+    "export_glb": "1",
+    "export_vrm": "0",
+    "render_angles": "portrait",
+    "render_height": "960",
+    "render_pose_frames": "3,9,16",
+    "render_pose_stills": "1",
+    "render_width": "640"
+  },
+  "jobs": [
+    {
+      "animation_preset": "talk_idle",
+      "category": "neck_chest",
+      "creator": "jeremy",
+      "display_name": "Bowtie Anchor Applied 3",
+      "facial_preset": "talking_soft",
+      "id": "qa-bowtie-anchor-applied-003",
+      "license": "Creative Commons Attribution 3.0",
+      "lipsync_timeline_json": "/workspace/outputs/lipsync/person_factory_hello.face.json",
+      "model_path": "/workspace/input/base_models/vroid_hairsample_female_cc0.vrm",
+      "notes": "Instant generated person: bowtie-jeremy accessory with talk_idle motion.",
+      "outfit_horizontal_center_offset_ratio": -0.0022,
+      "outfit_model": "/workspace/input/outfits/poly_pizza/bowtie_jeremy.glb",
+      "outfit_scale_axis": "width",
+      "outfit_target_size_ratio": 0.0975,
+      "outfit_vertical_center_ratio": 0.8304,
+      "persona": "host character who talks on command",
+      "source_url": "https://poly.pizza/m/fQGdyazJ-2m",
+      "tags": [
+        "generated",
+        "controllable",
+        "instant",
+        "base:female-hairsample",
+        "bowtie-jeremy",
+        "neck-chest",
+        "license:cc-by-3.0",
+        "attribution:required",
+        "quality:review",
+        "creator:jeremy",
+        "calibration:image-guided-anchor",
+        "anchor:neck-chest-collar-center",
+        "anchor-validation:review",
+        "talk-idle",
+        "dialogue",
+        "face:talking-soft",
+        "lip-sync",
+        "vrm-visemes"
+      ]
+    }
+  ]
+}

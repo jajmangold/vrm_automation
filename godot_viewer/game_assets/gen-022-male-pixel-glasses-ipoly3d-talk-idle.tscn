@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://game_assets/glb/gen-022-male-pixel-glasses-ipoly3d-talk-idle.glb" id="1_character"]
+
+[node name="gen_022_male_pixel_glasses_ipoly3d_talk_idle" instance=ExtResource("1_character")]
+metadata/id = "gen-022-male-pixel-glasses-ipoly3d-talk-idle"
+metadata/display_name = "Niko Talks"
+metadata/persona = "streamer character who talks on command"
+metadata/tags = "generated,controllable,base:male-hairsample,pixel-glasses-ipoly3d,head-face,license:cc0,attribution:not-required,quality:ship,creator:ipoly3d,talk-idle,dialogue,face:talking-soft"
+metadata/lipsync_timeline = ""
+metadata/lipsync_cue_count = 0
+metadata/lipsync_duration = 0.000
+metadata/lipsync_visemes = ""
+metadata/lipsync_source = "unknown"
+metadata/lipsync_source_event_count = 0
+metadata/lipsync_source_phoneme_count = 0
+metadata/lipsync_source_phonemes = ""
+metadata/animation_report = "/workspace/results/batch/gen-022-male-pixel-glasses-ipoly3d-talk-idle_animation.json"
