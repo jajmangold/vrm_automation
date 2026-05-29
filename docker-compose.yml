@@ -355,3 +355,48 @@ services:
       - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
     entrypoint: ["/bin/bash"]
     profiles: ["debug"]
+
+  necktie-depth-sweep:
+    image: vrm-automation-blender:${BLENDER_VERSION:-4.2.0}
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    working_dir: /workspace
+    environment:
+      HOME: /tmp/blender-home
+      XDG_CONFIG_HOME: /tmp/blender-config
+      NVIDIA_VISIBLE_DEVICES: ${GPU_ID:-none}
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility,graphics
+      INSTALL_MATERIAL_COMBINER: ${INSTALL_MATERIAL_COMBINER:-0}
+      NECKTIE_VRM: ${NECKTIE_VRM:-/workspace/input/base_models/vroid_hairsample_male_cc0.vrm}
+      NECKTIE_TIE: ${NECKTIE_TIE:-/workspace/input/outfits/poly_pizza/necktie_jeremy.glb}
+      NECKTIE_TARGET_CTR_Y_RAT: ${NECKTIE_TARGET_CTR_Y_RAT:-0.7216}
+      NECKTIE_REPORT: ${NECKTIE_REPORT:-/workspace/results/necktie_depth_sweep.json}
+    volumes:
+      - .:/workspace
+      - ${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}:${COMFY_STORAGE_USER:-/srv/nvme-data/containers/comfy/storage-user}
+    command:
+      - blender
+      - --background
+      - --python
+      - scripts/install_addons.py
+      - --python
+      - scripts/blender_necktie_depth_sweep.py
+      - --
+      - ${NECKTIE_VRM:-/workspace/input/base_models/vroid_hairsample_male_cc0.vrm}
+      - ${NECKTIE_TIE:-/workspace/input/outfits/poly_pizza/necktie_jeremy.glb}
+      - --target-center-y-ratio
+      - ${NECKTIE_TARGET_CTR_Y_RAT:-0.7216}
+      - --report-json
+      - ${NECKTIE_REPORT:-/workspace/results/necktie_depth_sweep.json}
+      - --width
+      - ${NECKTIE_WIDTH:-256}
+      - --height
+      - ${NECKTIE_HEIGHT:-256}
+      - --depth-steps
+      - ${NECKTIE_DEPTH_STEPS:-10}
+      - --depth-min
+      - ${NECKTIE_DEPTH_MIN:-0.05}
+      - --depth-max
+      - ${NECKTIE_DEPTH_MAX:-0.45}
+      - --review-images-dir
+      - ${NECKTIE_REVIEWS_DIR:-/workspace/results/necktie_depth_reviews}
+    profiles: ["tools"]

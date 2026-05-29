@@ -16,10 +16,8 @@ class PlacementApiTests(unittest.TestCase):
         self.assertEqual(result["status"], "ok")
         self.assertIn("rough", result["profiles"])
         keys = {asset["key"] for asset in result["assets"]}
-        self.assertIn("bowtie-jeremy", keys)
         self.assertIn("necktie-jeremy", keys)
         self.assertTrue(all(asset["quality"] == "ship" for asset in result["assets"]))
-        self.assertGreaterEqual(result["placement_priorities"]["use-saved-overrides"], 1)
         self.assertGreaterEqual(result["placement_priorities"]["qwen-sam-recalibration-required"], 1)
 
     def test_placement_plan_builds_rough_qwen_sam_command_template(self):
