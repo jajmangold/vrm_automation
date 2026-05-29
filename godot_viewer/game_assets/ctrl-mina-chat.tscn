@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-mina-chat.glb" id="1_character"]
-
-[node name="ctrl_mina_chat" instance=ExtResource("1_character")]
-metadata/id = "ctrl-mina-chat"
-metadata/display_name = "Mina Chat"
-metadata/persona = "soft-spoken conversation partner"
-metadata/tags = "controllable,student,bag,talk-idle,facial,dialogue"

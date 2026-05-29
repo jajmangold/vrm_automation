@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-ari-guide.glb" id="1_character"]
-
-[node name="ctrl_ari_guide" instance=ExtResource("1_character")]
-metadata/id = "ctrl-ari-guide"
-metadata/display_name = "Ari Guide"
-metadata/persona = "confident guide pointing out a route"
-metadata/tags = "controllable,travel,backpack,point,guide,full-body"

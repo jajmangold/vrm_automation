@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-nora-point.glb" id="1_character"]
-
-[node name="ctrl_nora_point" instance=ExtResource("1_character")]
-metadata/id = "ctrl-nora-point"
-metadata/display_name = "Nora Point"
-metadata/persona = "polished presenter with a gesture"
-metadata/tags = "controllable,portrait,necklace,point,presenter,facial"

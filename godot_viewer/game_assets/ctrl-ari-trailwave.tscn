@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-ari-trailwave.glb" id="1_character"]
-
-[node name="ctrl_ari_trailwave" instance=ExtResource("1_character")]
-metadata/id = "ctrl-ari-trailwave"
-metadata/display_name = "Ari Trailwave"
-metadata/persona = "outgoing day-trip friend"
-metadata/tags = "controllable,travel,backpack,cheerful,wave,full-body"

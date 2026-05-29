@@ -8,4 +8,16 @@ results/*
 !outputs/.gitkeep
 !results/.gitkeep
 cache/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Generated person-factory manifests (regenerable batch inputs/outputs).
+# Keep the hand-maintained canonical example.
+config/person_factory.*.json
+!config/person_factory.quick.json
+
+# Generated Godot game-asset scenes and their GLBs (regenerable from batches)
 godot_viewer/game_assets/glb/
+godot_viewer/game_assets/*.tscn

@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3]
-
-[ext_resource type="PackedScene" path="res://game_assets/glb/ctrl-mina-softstep.glb" id="1_character"]
-
-[node name="ctrl_mina_softstep" instance=ExtResource("1_character")]
-metadata/id = "ctrl-mina-softstep"
-metadata/display_name = "Mina Softstep"
-metadata/persona = "reserved student with a small bounce"
-metadata/tags = "controllable,student,bag,shy,subtle,full-body"
