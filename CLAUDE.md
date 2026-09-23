@@ -97,7 +97,7 @@ re-rendered PNG QA.
 
 ## Speech & lip-sync
 
-TTS/STT are intentionally external (remote services on `amd0`/`amd1`, see
+TTS/STT are intentionally external (remote services on `stt-host`/`tts-host`, see
 `config/speech_services.example.json`). The face-timeline format is canonical: `face_profile.py` maps
 VRoid/VRM shape keys to visemes (`aa ih ou ee oh`) + expressions. `generate_lipsync.py` (text-derived)
 and `rhubarb_adapter.py` (Rhubarb JSON → timeline) both emit `*.face.json`, the runtime contract the

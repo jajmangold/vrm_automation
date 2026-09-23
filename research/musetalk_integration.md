@@ -31,15 +31,15 @@ This keeps generated people controllable in Godot while allowing high-quality au
 review when we have a GPU service with MuseTalk weights installed.
 
 Speech generation/transcription should also stay external to MuseTalk. The local environment already
-has TTS/STT capacity on `josh@amd0` and `josh@amd1`, with Qwen3-TTS through Wan2GP noted as the
+has TTS/STT capacity on `tts-host` and `stt-host`, with Qwen3-TTS through Wan2GP noted as the
 preferred recurring-character voice layer. MuseTalk should consume finished WAV files from that
 voice layer, while STT can provide transcript/caption QA and later improve phoneme/viseme timing.
 Discovered endpoints on 2026-05-24:
 
-- `http://amd1:8102/v1/audio/speech`: Qwen 1.7B voice-design TTS
-- `http://amd1:8103/v1/audio/speech`: Qwen 0.6B base/clone TTS
-- `http://amd0:8098/v1/audio/transcriptions`: CrispASR fast STT, backend `granite-4.1-nar`
-- `http://amd0:8099/v1/audio/transcriptions`: CrispASR plus STT, backend `granite-4.1-plus`
+- `http://tts-host:8102/v1/audio/speech`: Qwen 1.7B voice-design TTS
+- `http://tts-host:8103/v1/audio/speech`: Qwen 0.6B base/clone TTS
+- `http://stt-host:8098/v1/audio/transcriptions`: CrispASR fast STT, backend `granite-4.1-nar`
+- `http://stt-host:8099/v1/audio/transcriptions`: CrispASR plus STT, backend `granite-4.1-plus`
 
 `scripts/speech_services.py` loads `config/speech_services.example.json` and can health-check these
 services before a talking-video batch.

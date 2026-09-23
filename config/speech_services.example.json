@@ -4,35 +4,35 @@
     "stt": {
       "fast": {
         "backend": "granite-4.1-nar",
-        "base_url": "http://amd0:8098",
+        "base_url": "http://stt-host:8098",
         "endpoint": "/v1/audio/transcriptions",
         "health_endpoint": "/health",
-        "host": "josh@amd0",
+        "host": "stt-host",
         "role": "fast transcription for captions and timing QA"
       },
       "plus": {
         "backend": "granite-4.1-plus",
-        "base_url": "http://amd0:8099",
+        "base_url": "http://stt-host:8099",
         "endpoint": "/v1/audio/transcriptions",
         "health_endpoint": "/health",
-        "host": "josh@amd0",
+        "host": "stt-host",
         "role": "higher quality transcription for final QA"
       }
     },
     "tts": {
       "base_clone": {
-        "base_url": "http://amd1:8103",
+        "base_url": "http://tts-host:8103",
         "endpoint": "/v1/audio/speech",
         "health_endpoint": "/health",
-        "host": "josh@amd1",
+        "host": "tts-host",
         "model": "qwen-talker-0.6b-base-Q8_0.gguf",
         "role": "fast Qwen TTS base/clone style generation"
       },
       "voice_design": {
-        "base_url": "http://amd1:8102",
+        "base_url": "http://tts-host:8102",
         "endpoint": "/v1/audio/speech",
         "health_endpoint": "/health",
-        "host": "josh@amd1",
+        "host": "tts-host",
         "model": "qwen-talker-1.7b-voicedesign-Q8_0.gguf",
         "role": "higher quality Qwen TTS voice design generation"
       }

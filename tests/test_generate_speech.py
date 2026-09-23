@@ -16,14 +16,14 @@ class GenerateSpeechTests(unittest.TestCase):
         services = {
             "tts": {
                 "base_clone": {
-                    "url": "http://amd1:8103/v1/audio/speech",
+                    "url": "http://tts-host:8103/v1/audio/speech",
                 }
             }
         }
 
         url, payload = build_tts_request(services, "base_clone", "Hello", voice="warm host", seed=7)
 
-        self.assertEqual(url, "http://amd1:8103/v1/audio/speech")
+        self.assertEqual(url, "http://tts-host:8103/v1/audio/speech")
         self.assertEqual(payload["input"], "Hello")
         self.assertEqual(payload["instruct"], "warm host")
         self.assertEqual(payload["seed"], 7)

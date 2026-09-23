@@ -21,13 +21,13 @@ class SpeechServicesTests(unittest.TestCase):
                         "services": {
                             "tts": {
                                 "voice_design": {
-                                    "base_url": "http://amd1:8102",
+                                    "base_url": "http://tts-host:8102",
                                     "endpoint": "/v1/audio/speech",
                                 }
                             },
                             "stt": {
                                 "fast": {
-                                    "base_url": "http://amd0:8098",
+                                    "base_url": "http://stt-host:8098",
                                     "endpoint": "/v1/audio/transcriptions",
                                 }
                             },
@@ -39,20 +39,20 @@ class SpeechServicesTests(unittest.TestCase):
 
             services = load_speech_services(path)
 
-        self.assertEqual(services["tts"]["voice_design"]["url"], "http://amd1:8102/v1/audio/speech")
-        self.assertEqual(services["stt"]["fast"]["url"], "http://amd0:8098/v1/audio/transcriptions")
+        self.assertEqual(services["tts"]["voice_design"]["url"], "http://tts-host:8102/v1/audio/speech")
+        self.assertEqual(services["stt"]["fast"]["url"], "http://stt-host:8098/v1/audio/transcriptions")
 
     def test_speech_health_urls_use_health_endpoint(self):
         services = {
-            "tts": {"voice_design": {"base_url": "http://amd1:8102"}},
-            "stt": {"fast": {"base_url": "http://amd0:8098"}},
+            "tts": {"voice_design": {"base_url": "http://tts-host:8102"}},
+            "stt": {"fast": {"base_url": "http://stt-host:8098"}},
         }
 
         self.assertEqual(
             speech_health_urls(services),
             {
-                "tts.voice_design": "http://amd1:8102/health",
-                "stt.fast": "http://amd0:8098/health",
+                "tts.voice_design": "http://tts-host:8102/health",
+                "stt.fast": "http://stt-host:8098/health",
             },
         )
 

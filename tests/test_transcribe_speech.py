@@ -18,11 +18,11 @@ from scripts.transcribe_speech import (
 
 class TranscribeSpeechTests(unittest.TestCase):
     def test_build_stt_request_uses_configured_service_url(self):
-        services = {"stt": {"fast": {"url": "http://amd0:8098/v1/audio/transcriptions"}}}
+        services = {"stt": {"fast": {"url": "http://stt-host:8098/v1/audio/transcriptions"}}}
 
         url, fields = build_stt_request(services, "fast", model="granite-fast")
 
-        self.assertEqual(url, "http://amd0:8098/v1/audio/transcriptions")
+        self.assertEqual(url, "http://stt-host:8098/v1/audio/transcriptions")
         self.assertEqual(fields["model"], "granite-fast")
 
     def test_normalize_transcript_response_accepts_openai_shape(self):
